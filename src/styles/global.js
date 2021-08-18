@@ -5,21 +5,6 @@ const GlobalStyles = createGlobalStyle`
     v2.0 | 20110126
     License: none (public domain)
     */
-    :root {
-        --primary-red: #f32530;
-        --secundary-red: #9e2836;
-        --clear: #fff;
-        --bg-primary: #071321;
-        --bg-secundary: #172331;
-        --bg-tertiary: #060e19;
-        --dark: #000;
-        --blue-telegram: #23b5d7;
-        --bg-blue: #0089d1;
-        --arrow-up: #2fa700;
-        --arrow-down: #f32530;
-        --grid: 1fr minmax(320px, 1080px) 1fr;
-    }
-
     html, body, div, span, button, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -49,6 +34,14 @@ const GlobalStyles = createGlobalStyle`
         font-size: 62.5%;
     }
     body {
+        --primary-red: #f32530;
+        --secundary-red: #9e2836;
+        --bg-primary: #071321;
+        --bg-secundary: #172331;
+        --bg-tertiary: #060e19;
+        --clear: #fff;
+        --dark: #000;
+        --grid: 1fr minmax(320px, 1080px) 1fr;
         line-height: 1;
         font-family: 'Montserrat', sans-serif;
         color: var(--clear);
