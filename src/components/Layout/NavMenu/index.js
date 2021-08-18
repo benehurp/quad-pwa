@@ -9,7 +9,7 @@ const MenuItems = styled.ul`
   display: flex;
   font-size: 1.4rem;
   text-transform: uppercase;
-  gap: 1rem;
+  gap: 2.5rem;
 `
 const Items = styled.li`
   padding: 0.5rem;

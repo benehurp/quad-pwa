@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Logo from "../Layout/Logo/index"
 import NavMenu from "../Layout/NavMenu/index"
+import ButtonRound from "./ButtonRound"
 
 const HeaderWrapper = styled.header`
   grid-template-columns: var(--grid);
@@ -22,24 +23,7 @@ const Header = () => {
       <HeaderContainerItems>
         <Logo />
         <NavMenu />
-        <div className="header-container-btns">
-          <button className="btn-telegram">
-            <img
-              src="./img/icon-telegram.svg"
-              alt="Icone do Telegram"
-              className="icon-telegram"
-            />
-            Telegram
-          </button>
-          <button className="btn-login">
-            Login
-            <img
-              src="./img/icon-signin.svg"
-              alt="Ícone de login"
-              className="icon-signin"
-            />
-          </button>
-        </div>
+        <ButtonRound />
       </HeaderContainerItems>
     </HeaderWrapper>
   )

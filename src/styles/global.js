@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
         --grid: 1fr minmax(320px, 1080px) 1fr;
     }
 
-    html, body, div, span, applet, object, iframe,
+    html, body, div, span, button, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
@@ -74,7 +74,8 @@ const GlobalStyles = createGlobalStyle`
         line-height: 2rem;
         margin-bottom: 2rem;
         color: hotpink;
-}
+    }
+
 
 `
 export default GlobalStyles
