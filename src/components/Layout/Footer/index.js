@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <S.FooterItemsWrapper>
         <S.FooterItems>
-          <Logo />
+          <Logo heigth="65px" alt="Logo do Rodapé: Quad Financial" />
         </S.FooterItems>
       </S.FooterItemsWrapper>
       <FooterCopyRight />

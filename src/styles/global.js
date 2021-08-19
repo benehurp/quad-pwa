@@ -39,6 +39,8 @@ const GlobalStyles = createGlobalStyle`
         --bg-primary: #071321;
         --bg-secundary: #172331;
         --bg-tertiary: #060e19;
+        --primary-blue: #3fb1e1;
+        --secundary-blue: #0089d1;
         --clear: #fff;
         --dark: #000;
         --grid: 1fr minmax(320px, 1080px) 1fr;

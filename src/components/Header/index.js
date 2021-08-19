@@ -1,16 +1,16 @@
 import React from "react"
 import Logo from "../Layout/Logo/index"
 import NavMenu from "../Layout/NavMenu/index"
-import ButtonRound from "./ButtonRound"
+import ButtonsHeader from "./ButtonWrapper"
 import * as S from "./styled"
 
 const Header = () => {
   return (
     <S.HeaderWrapper>
       <S.HeaderContainerItems>
-        <Logo />
+        <Logo heigth="80px" alt="Logo do Header: Quad Financial" />
         <NavMenu />
-        <ButtonRound />
+        <ButtonsHeader />
       </S.HeaderContainerItems>
     </S.HeaderWrapper>
   )
