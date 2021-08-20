@@ -1,5 +1,5 @@
 import styled from "styled-components"
 
-export const LogoWrapper = styled.img`
+export const LogoWrapperStyled = styled.img`
   height: ${props => props.heigth};
 `

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-export const ButtonWrapper = styled.div`
-  width: 20rem;
+export const ButtonWrapperStyled = styled.div`
+  width: auto;
   height: 2rem;
   gap: 1rem;
   display: flex;

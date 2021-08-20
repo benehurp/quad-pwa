@@ -1,15 +1,16 @@
 import styled from "styled-components"
 
-export const FooterItemsWrapper = styled.div`
+export const FooterItemsWrapperStyled = styled.div`
   grid-template-columns: var(--grid);
   display: grid;
   background-color: var(--bg-primary);
 `
 
-export const FooterItems = styled.div`
+export const FooterItemsStyled = styled.div`
   grid-column: 2/3;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 0 5rem;
   height: 16rem;
 `

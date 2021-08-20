@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const ButtonRound = styled.button`
+export const ButtonRoundStyled = styled.button`
   font-size: 1rem;
   font-weight: 600;
   width: ${props => (props.width ? props.width : "9rem")};
@@ -21,8 +21,14 @@ export const ButtonRound = styled.button`
       ${props => (props.gradientPercentTwo ? props.gradientPercentTwo : "125%")}
   );
   padding: 0.5rem;
-  border-radius: 2rem;
+  border-radius: ${props => (props.borderRadius ? props.borderRadius : "2rem")};
   letter-spacing: 0.7px;
+  text-align: center;
+  display: inline-flex;
+  gap: 0 1rem;
+  align-items: center;
+  justify-content: center;
+
   &:hover {
     cursor: pointer;
     filter: brightness(0.8);

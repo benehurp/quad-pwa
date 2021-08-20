@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
-export const HeaderWrapper = styled.header`
+export const HeaderWrapperStyled = styled.header`
   grid-template-columns: var(--grid);
   display: grid;
   background-color: var(--bg-primary);
 `
-export const HeaderContainerItems = styled.div`
+export const HeaderContainerItemsStyled = styled.div`
   grid-column: 2/3;
   display: flex;
   align-items: center;

@@ -3,9 +3,11 @@ import * as S from "./styled"
 
 const FooterCopyRight = () => {
   return (
-    <S.FooterCopyRightWrapper>
-      <S.FooterCopyRightItem>© 2021 QUAD Financial</S.FooterCopyRightItem>
-    </S.FooterCopyRightWrapper>
+    <S.FooterCopyRightWrapperStyled>
+      <S.FooterCopyRightItemStyled>
+        © 2021 QUAD Financial
+      </S.FooterCopyRightItemStyled>
+    </S.FooterCopyRightWrapperStyled>
   )
 }
 
