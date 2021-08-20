@@ -1,6 +1,6 @@
 import React from "react"
 import * as S from "./styled"
-import MiniWideButton from "./MiniWideButton"
+import MiniWideButton from "../../../Base/MiniWideButton"
 import TelegramIcon from "../../../../images/svg/icon-telegram.svg"
 import SigIn from "../../../../images/svg/icon-signin.svg"
 

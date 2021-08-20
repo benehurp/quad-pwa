@@ -4,15 +4,19 @@ import FooterCopyRight from "./FooterCopyRight"
 import Logo from "../../Base/Logo"
 import NavMenu from "../../Base/NavMenu"
 import FooterContacts from "./FooterContacts"
+import SocialLinks from "../../Base/SocialLinks"
+import { Mail } from "@styled-icons/heroicons-outline/Mail"
+import { PhoneCall } from "@styled-icons/evaicons-solid/PhoneCall"
 
 const Footer = () => {
   return (
     <footer>
-      <S.FooterItemsWrapperStyled>
-        <S.FooterItemsStyled>
+      <S.FooterItemsWrapper>
+        <S.FooterItems>
           <div
             style={{
               display: "flex",
+              alignItems: "flex-start",
               flexDirection: "column",
               gap: "1.5rem 0",
               fontSize: "1rem",
@@ -21,9 +25,14 @@ const Footer = () => {
             }}
           >
             <Logo heigth="65px" alt="Logo do Rodapé: Quad Financial" />
-            Acompanhe nas
-            <br />
-            redes sociais
+            <S.SocialLinksWrapper>
+              <SocialLinks />
+              <S.SocialLinksDescription>
+                Acompanhe nas
+                <br />
+                redes sociais
+              </S.SocialLinksDescription>
+            </S.SocialLinksWrapper>
           </div>
           <div>
             <div
@@ -36,13 +45,19 @@ const Footer = () => {
                 fontWeight: "600",
               }}
             >
-              <FooterContacts />
-              <FooterContacts />
+              <FooterContacts>
+                <Mail width="2rem" />
+                11 98226-0732
+              </FooterContacts>
+              <FooterContacts>
+                <PhoneCall width="2rem" />
+                contato@quadfinancial.com.br
+              </FooterContacts>
             </div>
             <NavMenu />
           </div>
-        </S.FooterItemsStyled>
-      </S.FooterItemsWrapperStyled>
+        </S.FooterItems>
+      </S.FooterItemsWrapper>
       <FooterCopyRight />
     </footer>
   )

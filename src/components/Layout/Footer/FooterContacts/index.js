@@ -1,7 +1,8 @@
 import React from "react"
+import * as S from "./styled"
 
-const FooterContacts = () => {
-  return <div>11 98226-0732</div>
+const FooterContacts = ({ children }) => {
+  return <S.FooterContactsItems>{children}</S.FooterContactsItems>
 }
 
 export default FooterContacts
