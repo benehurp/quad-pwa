@@ -9,19 +9,19 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sitemap`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`400`, `600`, `800`],
-          },
-          {
-            family: `Montserrat`,
-            subsets: [`latin`],
-          },
-        ],
+        google: {
+          families: ["Montserrat"],
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://quadfinancial.com.br`,
       },
     },
     {
@@ -39,16 +39,32 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Quad Financial - Site oficial`,
+        short_name: `Quad Financial`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#172331`,
+        theme_color: `#f32530`,
         display: `minimal-ui`,
         icon: `src/images/favQuad.png`,
       },
