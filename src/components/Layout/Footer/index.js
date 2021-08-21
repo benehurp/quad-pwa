@@ -7,59 +7,62 @@ import FooterContacts from "./FooterContacts"
 import SocialLinks from "../../Base/SocialLinks"
 import { Mail } from "@styled-icons/heroicons-outline/Mail"
 import { PhoneCall } from "@styled-icons/evaicons-solid/PhoneCall"
+import TelegramFooter from "./TelegramFooter"
 
 const Footer = () => {
   return (
-    <footer>
-      <S.FooterItemsWrapper>
-        <S.FooterItems>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "flex-start",
-              flexDirection: "column",
-              gap: "1.5rem 0",
-              fontSize: "1rem",
-              textTransform: "uppercase",
-              fontWeight: "600",
-            }}
-          >
-            <Logo heigth="65px" alt="Logo do Rodapé: Quad Financial" />
-            <S.SocialLinksWrapper>
-              <SocialLinks />
-              <S.SocialLinksDescription>
-                Acompanhe nas
-                <br />
-                redes sociais
-              </S.SocialLinksDescription>
-            </S.SocialLinksWrapper>
-          </div>
-          <div>
+    <>
+      <TelegramFooter />
+      <footer>
+        <S.FooterItemsWrapper>
+          <S.FooterItems>
             <div
               style={{
                 display: "flex",
-                gap: "0 2rem",
-                marginTop: "2rem",
-                marginBottom: "4rem",
-                fontSize: "1.2rem",
+                alignItems: "flex-start",
+                flexDirection: "column",
+                gap: "1.5rem 0",
+                fontSize: "1rem",
+                textTransform: "uppercase",
                 fontWeight: "600",
               }}
             >
-              <FooterContacts>
-                <Mail width="2rem" />
-                11 98226-0732
-              </FooterContacts>
-              <FooterContacts>
-                <PhoneCall width="2rem" />
-                contato@quadfinancial.com.br
-              </FooterContacts>
+              <Logo heigth="65px" alt="Logo do Rodapé: Quad Financial" />
+              <S.SocialLinksWrapper>
+                <SocialLinks />
+                <S.SocialLinksDescription>
+                  Acompanhe nas
+                  <br />
+                  redes sociais
+                </S.SocialLinksDescription>
+              </S.SocialLinksWrapper>
             </div>
-            <NavMenu />
-          </div>
-        </S.FooterItems>
-      </S.FooterItemsWrapper>
-      <FooterCopyRight />
-    </footer>
+            <div>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "2rem",
+                  marginBottom: "2rem",
+                  fontSize: "1.2rem",
+                  fontWeight: "600",
+                }}
+              >
+                <FooterContacts>
+                  <Mail width="2rem" />
+                  11 98226-0732
+                </FooterContacts>
+                <FooterContacts>
+                  <PhoneCall width="1.8rem" />
+                  contato@quadfinancial.com.br
+                </FooterContacts>
+              </div>
+              <NavMenu />
+            </div>
+          </S.FooterItems>
+        </S.FooterItemsWrapper>
+        <FooterCopyRight />
+      </footer>
+    </>
   )
 }
 

@@ -4,7 +4,7 @@ export const ButtonRoundStyled = styled.button`
   font-size: 1rem;
   font-weight: 600;
   width: ${props => (props.width ? props.width : "9rem")};
-  height: ${props => (props.height ? props.height : "2rem")};
+  height: ${props => (props.height ? props.height : "2.5rem")};
   text-transform: uppercase;
   color: var(${props => (props.color ? props.color : "--clear")});
   background-image: linear-gradient(

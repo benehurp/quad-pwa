@@ -10,7 +10,7 @@ const ButtonsWrapper = () => {
       <MiniWideButton
         color={"--primary-blue"}
         width={"15rem"}
-        height={"2rem"}
+        height={"2.5rem"}
         gradientColorOne={"--clear"}
         gradientColorTwo={"--clear"}
         gradientPercentOne={"0%"}
