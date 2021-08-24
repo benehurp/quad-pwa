@@ -8,11 +8,11 @@ const ButtonsWrapper = () => {
   return (
     <S.ButtonWrapperStyled>
       <MiniWideButton
-        color={"--primary-blue"}
+        color={"blue"}
         width={"15rem"}
         height={"2.5rem"}
-        gradientColorOne={"--clear"}
-        gradientColorTwo={"--clear"}
+        gradientColorOne={"theme.colors.blueTwo"}
+        gradientColorTwo={"blueTwo"}
         gradientPercentOne={"0%"}
         gradientPercentTwo={"100%"}
         gradientDeg={"90deg"}

@@ -12,11 +12,11 @@ const TelegramFooter = () => {
         gratuitamente e fique por dentro de atualizações.
       </div>
       <MiniWideButton
-        color={"--primary-blue"}
+        color={"blue"}
         width={"30rem"}
         height={"3rem"}
-        gradientColorOne={"--clear"}
-        gradientColorTwo={"--clear"}
+        gradientColorOne={"white"}
+        gradientColorTwo={"white"}
         gradientPercentOne={"0%"}
         gradientPercentTwo={"100%"}
         gradientDeg={"90deg"}

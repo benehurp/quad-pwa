@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 export const HeaderWrapperStyled = styled.header`
-  grid-template-columns: var(--grid);
+  grid-template-columns: ${({ theme }) => theme.breakingPoints.desktop};
   display: grid;
-  background-color: var(--bg-primary);
+  background-color: ${({ theme }) => theme.colors.gray};
 `
 export const HeaderContainerItemsStyled = styled.div`
   grid-column: 2/3;

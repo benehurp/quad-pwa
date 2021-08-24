@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const TelegramWrapper = styled.div`
-  background-color: var(--secundary-blue);
+  background-color: ${({ theme }) => theme.colors.blueTwo};
   width: 100%;
   height: 12rem;
   display: flex;

@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 export const FooterCopyRightWrapperStyled = styled.div`
-  grid-template-columns: var(--grid);
+  grid-template-columns: ${({ theme }) => theme.breakingPoints.desktop};
   display: grid;
-  background-color: var(--bg-secundary);
+  background-color: ${({ theme }) => theme.colors.grayTwo};
 `
 
 export const FooterCopyRightItemStyled = styled.div`

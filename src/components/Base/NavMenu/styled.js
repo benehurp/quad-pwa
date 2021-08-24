@@ -12,10 +12,10 @@ export const MenuItems = styled.ul`
 `
 export const Items = styled.li`
   padding: 0.5rem;
-  color: var(--clear);
+  color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
   &:hover {
-    color: var(--primary-red);
+    color: ${({ theme }) => theme.colors.red};
     cursor: pointer;
     text-decoration: underline;
   }
