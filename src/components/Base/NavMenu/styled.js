@@ -11,7 +11,6 @@ export const MenuItems = styled.ul`
   gap: 2.5rem;
 `
 export const Items = styled.li`
-  padding: 0.5rem;
   color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
   &:hover {

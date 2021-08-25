@@ -11,6 +11,13 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Montserrat\:300,400,600,800`],
+        display: "swap",
+      },
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
@@ -31,6 +38,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -55,8 +64,6 @@ module.exports = {
         trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

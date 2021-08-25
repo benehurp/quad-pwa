@@ -1,5 +1,6 @@
 import React from "react"
 import * as S from "./styled"
+import ArrowMark from "../../../../images/svg/arrow-mark.svg"
 
 const HomeSectionOne = () => {
   return (
@@ -8,7 +9,7 @@ const HomeSectionOne = () => {
         <span class="text-red">Domine</span> os ciclos dos mercados globais
       </h1>
       <div class="hs1-move-down-container">
-        <img src="img/move-down.svg" class="hs1-move-down" />
+        <img src={ArrowMark} alt="Saiba mais" class="hs1-move-down" />
       </div>
     </S.SectionOneWrapper>
   )

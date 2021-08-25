@@ -4,7 +4,8 @@ export const SectionOneWrapper = styled.section`
   grid-template-columns: ${({ theme }) => theme.breakingPoints.desktop};
   display: grid;
   align-items: center;
-  background-image: url("./img/section1.jpg");
+  background-color: ${({ theme }) => theme.colors.gray};
+  /* background-image: url("./img/section1.jpg"); */
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,15 +15,15 @@ export const SectionOneWrapper = styled.section`
     grid-column: 2/3;
     align-items: center;
     width: 70%;
-    color: ${({ theme }) => theme.colors.white};
     text-transform: uppercase;
-    font-size: 12rem;
+    font-weight: ${({ theme }) => theme.font.weight.extrabold};
+    font-size: ${({ theme }) => theme.font.size.extra};
+    font-style: normal;
+    color: ${({ theme }) => theme.colors.white};
     letter-spacing: -5px;
     line-height: 10rem;
-    font-weight: 800;
   }
   .hs1-move-down-container {
-    padding: 1rem;
     position: absolute;
     top: 92rem;
     grid-column: 2/3;
@@ -38,6 +39,11 @@ export const SectionOneWrapper = styled.section`
     animation-name: moveDown;
     animation-iteration-count: infinite;
     animation-duration: 1s;
+  }
+  .text-red {
+    margin: 0;
+    padding: 0;
+    color: ${({ theme }) => theme.colors.red};
   }
   @keyframes moveDown {
     0% {

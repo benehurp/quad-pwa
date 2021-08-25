@@ -42,7 +42,7 @@ const Footer = () => {
                 style={{
                   display: "flex",
                   gap: "2rem",
-                  marginBottom: "2rem",
+                  marginBottom: "3rem",
                   fontSize: "1.2rem",
                   fontWeight: "600",
                 }}

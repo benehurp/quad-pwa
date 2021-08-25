@@ -16,20 +16,23 @@ export default {
   },
   font: {
     family: "'Montserrat', sans-serif",
-    light: 300,
-    normal: 400,
-    semibold: 600,
-    extrabold: 800,
-    sizes: {
+    weight: {
+      light: 300,
+      normal: 400,
+      semibold: 600,
+      extrabold: 800,
+    },
+    size: {
+      xxsmall: "0.8rem",
       xsmall: "1.2rem",
       small: "1.6rem",
       medium: "2rem",
       large: "2.4rem",
-      xlarge: "3rem",
-      xxlarge: "3.4rem",
-      smallBigTitle: "5.4rem",
-      mediumBigTitle: "9.4rem",
-      largeBigTitle: "12.6rem",
+      xlarge: "2.8rem",
+      xxlarge: "3.2rem",
+      xxextra: "6rem",
+      xextra: "9rem",
+      extra: "12rem",
     },
   },
 }

@@ -117,15 +117,6 @@ const GlobalStyles = createGlobalStyle`
           line-height: 1;
           font-family: ${theme.font.family};
           color: ${theme.colors.white};
-          --xsmall: 1.2rem;
-          --small: 1.6rem;
-          --medium: 2rem;
-          --large: 2.4rem;
-          --xlarge: 3rem;
-          --xxlarge: 3.4rem;
-          --smallBigTitle: 5.4rem;
-          --mediumBigTitle: 9.4rem;
-          --largeBigTitle: 12.6rem;
         }
         ol,
         ul {
@@ -151,7 +142,6 @@ const GlobalStyles = createGlobalStyle`
           font-size: 1.4rem;
           line-height: 2rem;
           margin-bottom: 2rem;
-          color: hotpink;
         }
       `}
 `
