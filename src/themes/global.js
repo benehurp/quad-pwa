@@ -137,12 +137,12 @@ const GlobalStyles = createGlobalStyle`
           border-collapse: collapse;
           border-spacing: 0;
         }
-        p {
+        /* p {
           display: block;
           font-size: 1.4rem;
           line-height: 2rem;
           margin-bottom: 2rem;
-        }
+        } */
       `}
 `
 export default GlobalStyles

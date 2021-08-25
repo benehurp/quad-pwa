@@ -1,7 +1,7 @@
 import React from "react"
 import * as S from "./styled"
-import ArrowUp from "../../images/svg/arrow-up.svg"
-import ArrowDown from "../../images/svg/arrow-down.svg"
+import ArrowUp from "../../../images/svg/arrow-up.svg"
+import ArrowDown from "../../../images/svg/arrow-down.svg"
 
 export const StockMarket = () => {
   return (

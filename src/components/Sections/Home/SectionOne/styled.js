@@ -18,7 +18,6 @@ export const SectionOneWrapper = styled.section`
     text-transform: uppercase;
     font-weight: ${({ theme }) => theme.font.weight.extrabold};
     font-size: ${({ theme }) => theme.font.size.extra};
-    font-style: normal;
     color: ${({ theme }) => theme.colors.white};
     letter-spacing: -5px;
     line-height: 10rem;

@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components"
 
 export const ButtonRoundStyled = styled.button`
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: ${({ theme }) => theme.font.size.xxsmall};
+  font-weight: ${({ theme }) => theme.font.weight.semibold};
   width: ${props => (props.width ? props.width : "9rem")};
   height: ${props => (props.height ? props.height : "2.5rem")};
   text-transform: uppercase;
@@ -39,6 +39,6 @@ export const ButtonRoundStyled = styled.button`
 
   &:hover {
     cursor: pointer;
-    filter: brightness(0.8);
+    filter: drop-shadow(3px 5px 20px #141414) saturate(2);
   }
 `

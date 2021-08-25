@@ -23,9 +23,9 @@ export default {
       extrabold: 800,
     },
     size: {
-      xxsmall: "0.8rem",
+      xxsmall: "1rem",
       xsmall: "1.2rem",
-      small: "1.6rem",
+      small: "1.4rem",
       medium: "2rem",
       large: "2.4rem",
       xlarge: "2.8rem",

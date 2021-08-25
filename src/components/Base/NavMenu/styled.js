@@ -6,13 +6,13 @@ export const MenuWrapper = styled.nav`
 
 export const MenuItems = styled.ul`
   display: flex;
-  font-size: 1.4rem;
+  font-size: ${({ theme }) => theme.font.size.xsmall};
   text-transform: uppercase;
   gap: 2.5rem;
 `
 export const Items = styled.li`
   color: ${({ theme }) => theme.colors.white};
-  font-weight: 600;
+  font-weight: ${({ theme }) => theme.font.weight.semibold};
   &:hover {
     color: ${({ theme }) => theme.colors.red};
     cursor: pointer;

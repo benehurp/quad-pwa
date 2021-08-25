@@ -6,9 +6,9 @@ export const StockMarketWrapper = styled.aside`
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.colors.white};
-  font-size: 1.2rem;
+  font-size: ${({ theme }) => theme.font.size.xsmall};
+  font-weight: ${({ theme }) => theme.font.weight.normal};
   line-height: 2rem;
-  font-weight: 500;
 `
 export const StockMarketList = styled.ul`
   display: flex;
