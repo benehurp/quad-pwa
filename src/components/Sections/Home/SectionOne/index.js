@@ -2,9 +2,9 @@ import React from "react"
 import * as S from "./styled"
 import ArrowMark from "../../../../images/svg/arrow-mark.svg"
 
-const HomeSectionOne = () => {
+const HomeSectionOne = ({ background, backgroundPosition, height }) => {
   return (
-    <S.SectionOneWrapper>
+    <S.SectionOneWrapper background="" backgroundPosition="" height="">
       <h1 class="hs1-title">
         <span class="text-red">Domine</span> os ciclos dos mercados globais
       </h1>

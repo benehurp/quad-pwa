@@ -1,16 +1,7 @@
 import styled from "styled-components"
+import { SectionWrapper } from "../../styled"
 
-export const SectionOneWrapper = styled.section`
-  grid-template-columns: ${({ theme }) => theme.breakingPoints.desktop};
-  display: grid;
-  align-items: center;
-  background-color: ${({ theme }) => theme.colors.gray};
-  /* background-image: url("./img/section1.jpg"); */
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80rem;
-
+export const SectionOneWrapper = styled(SectionWrapper)`
   .hs1-title {
     grid-column: 2/3;
     align-items: center;
