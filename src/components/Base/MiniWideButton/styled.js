@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components"
+import { Link } from "gatsby"
 
 export const ButtonRoundStyled = styled.button`
   font-size: ${({ theme }) => theme.font.size.xxsmall};
@@ -36,6 +37,7 @@ export const ButtonRoundStyled = styled.button`
   gap: 0 1rem;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 
   &:hover {
     cursor: pointer;

@@ -1,20 +1,26 @@
 import styled from "styled-components"
+import { Link } from "gatsby"
 
-export const SocialLinksWrapper = styled.nav`
+export const SocialMediaWrapper = styled.nav`
   width: 100%;
 `
 
-export const SocialLinksList = styled.ul`
+export const SocialMediaList = styled.ul`
   display: flex;
   gap: 0 0.8rem;
   justify-content: start;
   align-items: center;
 `
 
-export const SocialLinksItem = styled.li`
+export const SocialMediaItem = styled.li`
   width: 2rem;
   cursor: pointer;
+`
+
+export const SocialMediaLink = styled(Link)`
+  color: ${({ theme }) => theme.colors.white};
+
   &:hover {
-    filter: brightness(0.8);
+    filter: opacity(50%);
   }
 `

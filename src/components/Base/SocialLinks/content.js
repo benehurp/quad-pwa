@@ -1,22 +1,22 @@
 const handle = "quadfinancial"
 
-const links = [
+const linksContent = [
   {
     label: "Facebook",
     url: `https://facebook.com/${handle}`,
   },
   {
     label: "Instagram",
-    url: `https://instagram.com/${handle}`,
+    url: `https://www.instagram.com/${handle}`,
   },
   {
     label: "Linkedin",
-    url: `https://www.linkedin.com/in/${handle}`,
+    url: `#`,
   },
   {
     label: "Youtube",
-    url: `https://www.youtube.com/${handle}`,
+    url: `https://www.youtube.com/c/canalquad`,
   },
 ]
 
-export default links
+export default linksContent

@@ -1,26 +1,28 @@
 import React from "react"
 
-import IconsSocialLinks from "./icons"
-import links from "./content"
+import IconsSocialMedia from "./icons"
+import linksContent from "./content"
 
 import * as S from "./styled"
 
-const SocialLinks = () => {
+const SocialMedia = () => {
   return (
-    <S.SocialLinksWrapper>
-      <S.SocialLinksList>
-        {links.map((links, i) => {
-          const Icon = IconsSocialLinks[links.label]
+    <S.SocialMediaWrapper>
+      <S.SocialMediaList>
+        {linksContent.map((linksContent, i) => {
+          const Icon = IconsSocialMedia[linksContent.label]
 
           return (
-            <S.SocialLinksItem key={i}>
-              <Icon alt={links.label} />
-            </S.SocialLinksItem>
+            <S.SocialMediaItem key={i}>
+              <S.SocialMediaLink to={linksContent.url}>
+                <Icon alt={linksContent.label} />
+              </S.SocialMediaLink>
+            </S.SocialMediaItem>
           )
         })}
-      </S.SocialLinksList>
-    </S.SocialLinksWrapper>
+      </S.SocialMediaList>
+    </S.SocialMediaWrapper>
   )
 }
 
-export default SocialLinks
+export default SocialMedia

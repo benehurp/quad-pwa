@@ -49,7 +49,7 @@ const Footer = () => {
               >
                 <FooterContacts>
                   <Mail width="2rem" />
-                  11 98226-0732
+                  11 99621-3970
                 </FooterContacts>
                 <FooterContacts>
                   <PhoneCall width="1.8rem" />
