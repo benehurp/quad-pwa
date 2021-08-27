@@ -4,7 +4,7 @@ import ArrowMark from "../../../../images/svg/arrow-mark.svg"
 
 const HomeSectionOne = ({ background, backgroundPosition, height }) => {
   return (
-    <S.SectionOneWrapper background="" backgroundPosition="" height="">
+    <S.SectionOneWrapper background="gray" backgroundPosition="" height="">
       <h1 class="hs1-title">
         <span class="text-red">Domine</span> os ciclos dos mercados globais
       </h1>

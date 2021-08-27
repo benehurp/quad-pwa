@@ -8,7 +8,7 @@ export const SectionWrapper = styled.section`
     props.background
       ? ({ theme }) => theme.colors[props.background]
       : ({ theme }) => theme.colors.gray};
-  /* background-image: url("./img/section1.jpg"); */
+  /* background-image: url(${`./images/home-section1.jpg`}); */
   background-position: ${props =>
     props.backgroundPosition
       ? ({ theme }) => theme.colors[props.backgroundPosition]

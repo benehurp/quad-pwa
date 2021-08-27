@@ -12,6 +12,7 @@ const TelegramFooter = () => {
         gratuitamente e fique por dentro de atualizações.
       </div>
       <MiniWideButton
+        link="https://t.me/canaldaquad"
         color={"blue"}
         width={"30rem"}
         height={"3rem"}

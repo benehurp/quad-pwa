@@ -2,6 +2,7 @@ import React from "react"
 import * as S from "./styled"
 
 const MiniWideButton = ({
+  link,
   children,
   color,
   width,
@@ -14,7 +15,8 @@ const MiniWideButton = ({
   borderRadius,
 }) => {
   return (
-    <S.ButtonRoundStyled
+    <S.ButtonRoundStyledLink
+      to={link}
       color={color}
       width={width}
       height={height}
@@ -26,7 +28,7 @@ const MiniWideButton = ({
       borderRadius={borderRadius}
     >
       {children}
-    </S.ButtonRoundStyled>
+    </S.ButtonRoundStyledLink>
   )
 }
 
