@@ -38,7 +38,7 @@ const Footer = () => {
               </S.SocialLinksWrapper>
             </div>
             <div>
-              <div
+              <address
                 style={{
                   display: "flex",
                   gap: "2rem",
@@ -55,7 +55,7 @@ const Footer = () => {
                   <PhoneCall width="1.8rem" />
                   contato@quadfinancial.com.br
                 </FooterContacts>
-              </div>
+              </address>
               <NavMenu />
             </div>
           </S.FooterItems>

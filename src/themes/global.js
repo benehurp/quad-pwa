@@ -137,12 +137,14 @@ const GlobalStyles = createGlobalStyle`
           border-collapse: collapse;
           border-spacing: 0;
         }
-        /* p {
+        p {
           display: block;
-          font-size: 1.4rem;
+          font-size: ${({ theme }) => theme.font.size.small};
           line-height: 2rem;
-          margin-bottom: 2rem;
-        } */
+        }
+        p + p {
+          margin-top: 2rem;
+        }
       `}
 `
 export default GlobalStyles

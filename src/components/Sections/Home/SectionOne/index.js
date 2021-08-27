@@ -16,11 +16,12 @@ const HomeSectionOne = ({
       backgroundPosition=""
       height=""
     >
-      <h1 class="hs1-title">
-        <span class="text-red">Domine</span> os ciclos dos mercados globais
+      <h1 class="home-title">
+        <span class="title-text-highlight">Domine</span> os ciclos dos mercados
+        globais
       </h1>
-      <div class="hs1-move-down-container">
-        <img src={ArrowMark} alt="Saiba mais" class="hs1-move-down" />
+      <div class="move-down-container">
+        <img src={ArrowMark} alt="Saiba mais" class="move-down-icon" />
       </div>
     </S.SectionOneWrapper>
   )

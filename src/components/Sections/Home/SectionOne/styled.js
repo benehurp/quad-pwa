@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { SectionsWrapper } from "../../styled"
 
 export const SectionOneWrapper = styled(SectionsWrapper)`
-  .hs1-title {
+  .home-title {
     grid-column: 2/3;
     align-items: center;
     width: 70%;
@@ -13,7 +13,12 @@ export const SectionOneWrapper = styled(SectionsWrapper)`
     letter-spacing: -5px;
     line-height: 10rem;
   }
-  .hs1-move-down-container {
+  .title-text-highlight {
+    margin: 0;
+    padding: 0;
+    color: ${({ theme }) => theme.colors.red};
+  }
+  .move-down-container {
     position: absolute;
     top: 92rem;
     grid-column: 2/3;
@@ -22,18 +27,13 @@ export const SectionOneWrapper = styled(SectionsWrapper)`
     justify-content: center;
     align-items: center;
   }
-  .hs1-move-down {
+  .move-down-icon {
     position: relative;
     width: 8rem;
     top: -1rem;
     animation-name: moveDown;
     animation-iteration-count: infinite;
     animation-duration: 1s;
-  }
-  .text-red {
-    margin: 0;
-    padding: 0;
-    color: ${({ theme }) => theme.colors.red};
   }
   @keyframes moveDown {
     0% {

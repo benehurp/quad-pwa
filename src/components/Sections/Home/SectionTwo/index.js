@@ -1,5 +1,7 @@
 import React from "react"
 import * as S from "./styled"
+import BigLogoQuad from "../../../../images/svg/logo-Q.svg"
+import ImageSection from "../../../../images/home-section2.jpg"
 
 const HomeSectionTwo = ({
   backgroundColor,
@@ -10,11 +12,33 @@ const HomeSectionTwo = ({
   return (
     <S.SectionTwoWrapper
       backgroundColor=""
-      backgroundImage=""
+      backgroundImage={ImageSection}
       backgroundPosition=""
       height=""
     >
-      Section X
+      <div class="card">
+        <div class="big-logo">
+          <div class="big-logo-container">
+            <img src={BigLogoQuad} alt="Símbolo gigante da QuadFinancial" />
+          </div>
+        </div>
+        <div class="big-logo-description">
+          <h4 class="big-logo-title">
+            Sua caminhada para obter retornos absolutos no médio prazo começa
+            aqui
+          </h4>
+          <p>
+            Oferecemos análises e recomendações que vão ajudá-lo a estruturar
+            sua carteira de forma adequada para enfrentar cada etapa do ciclo de
+            mercado.
+          </p>
+          <p>
+            Seguindo os sinais do Método M4D, compomos estratégias de portfólio
+            agressivas quando o risco é baixo e defensivas quando o risco de
+            correção nos preços for elevado.
+          </p>
+        </div>
+      </div>
     </S.SectionTwoWrapper>
   )
 }
