@@ -31,9 +31,9 @@ export default {
       large: "2.4rem",
       xlarge: "2.8rem",
       xxlarge: "3.2rem",
-      xxextra: "6rem",
+      extra: "6rem",
       xextra: "9rem",
-      extra: "12rem",
+      xxextra: "12rem",
     },
   },
 }

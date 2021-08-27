@@ -23,10 +23,10 @@ const HomeSectionTwo = ({
           </div>
         </div>
         <div class="big-logo-description">
-          <h4 class="big-logo-title">
+          <S.TitleH4>
             Sua caminhada para obter retornos absolutos no médio prazo começa
             aqui
-          </h4>
+          </S.TitleH4>
           <p>
             Oferecemos análises e recomendações que vão ajudá-lo a estruturar
             sua carteira de forma adequada para enfrentar cada etapa do ciclo de
