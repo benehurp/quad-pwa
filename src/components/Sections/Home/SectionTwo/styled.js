@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { SectionsWrapper } from "../../styled"
 
-export const SectionOneWrapper = styled(SectionsWrapper)`
+export const SectionTwoWrapper = styled(SectionsWrapper)`
   .hs1-title {
     grid-column: 2/3;
     align-items: center;

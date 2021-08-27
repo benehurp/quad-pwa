@@ -1,12 +1,21 @@
 import React from "react"
+import * as S from "./styled"
 
-const HomeSectionTwo = ({ background, backgroundPosition, height }) => {
+const HomeSectionTwo = ({
+  backgroundColor,
+  backgroundImage,
+  backgroundPosition,
+  height,
+}) => {
   return (
-    <S.SectionOneWrapper
-      background=""
+    <S.SectionTwoWrapper
+      backgroundColor=""
+      backgroundImage=""
       backgroundPosition=""
       height=""
-    ></S.SectionOneWrapper>
+    >
+      Section X
+    </S.SectionTwoWrapper>
   )
 }
 

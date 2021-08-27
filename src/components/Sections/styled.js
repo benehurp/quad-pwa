@@ -1,14 +1,14 @@
 import styled from "styled-components"
 
-export const SectionWrapper = styled.section`
+export const SectionsWrapper = styled.section`
   grid-template-columns: ${({ theme }) => theme.breakingPoints.desktop};
   display: grid;
   align-items: center;
   background-color: ${props =>
-    props.background
-      ? ({ theme }) => theme.colors[props.background]
+    props.backgroundColor
+      ? ({ theme }) => theme.colors[props.backgroundColor]
       : ({ theme }) => theme.colors.gray};
-  /* background-image: url(${`./images/home-section1.jpg`}); */
+  background-image: url(${props => props.backgroundImage});
   background-position: ${props =>
     props.backgroundPosition
       ? ({ theme }) => theme.colors[props.backgroundPosition]
