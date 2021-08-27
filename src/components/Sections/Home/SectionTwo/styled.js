@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { SectionsWrapper } from "../../styled"
+import { SectionsWrapper } from "../../styledSections"
 
 export const SectionTwoWrapper = styled(SectionsWrapper)`
   .card {

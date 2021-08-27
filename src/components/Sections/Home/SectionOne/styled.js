@@ -1,17 +1,17 @@
 import styled from "styled-components"
-import { SectionsWrapper } from "../../styled"
+import {
+  SectionsWrapper,
+  SectionsH1,
+  SectionsH2,
+  SectionsH3,
+  SectionsH4,
+  SectionsH5,
+  SectionsH6,
+} from "../../styledSections"
 
 export const SectionOneWrapper = styled(SectionsWrapper)`
-  .home-title {
+  .section-container {
     grid-column: 2/3;
-    align-items: center;
-    width: 70%;
-    text-transform: uppercase;
-    font-weight: ${({ theme }) => theme.font.weight.extrabold};
-    font-size: ${({ theme }) => theme.font.size.extra};
-    color: ${({ theme }) => theme.colors.white};
-    letter-spacing: -5px;
-    line-height: 10rem;
   }
   .title-text-highlight {
     margin: 0;
@@ -46,3 +46,14 @@ export const SectionOneWrapper = styled(SectionsWrapper)`
     }
   }
 `
+export const TitleH1 = styled(SectionsH1)``
+
+export const TitleH2 = styled(SectionsH2)``
+
+export const TitleH3 = styled(SectionsH3)``
+
+export const TitleH4 = styled(SectionsH4)``
+
+export const TitleH5 = styled(SectionsH5)``
+
+export const TitleH6 = styled(SectionsH6)``

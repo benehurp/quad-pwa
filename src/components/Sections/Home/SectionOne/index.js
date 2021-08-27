@@ -15,11 +15,13 @@ const HomeSectionOne = ({
       backgroundImage={ImageSection}
       backgroundPosition=""
       height=""
+      s
     >
-      <h1 class="home-title">
-        <span class="title-text-highlight">Domine</span> os ciclos dos mercados
-        globais
-      </h1>
+      <div className="section-container">
+        <S.TitleH1>
+          <span>Domine</span> os ciclos dos mercados globais
+        </S.TitleH1>
+      </div>
       <div class="move-down-container">
         <img src={ArrowMark} alt="Saiba mais" class="move-down-icon" />
       </div>
