@@ -18,9 +18,10 @@ export const SectionsWrapper = styled.section`
   height: ${props =>
     props.height ? ({ theme }) => theme.colors[props.height] : "80rem"};
 `
+
 export const SectionsH1 = styled.h1`
-  width: ${props => (props.fontWeigth ? props.textAlign : "100%")};
-  text-align: ${props => (props.fontWeigth ? props.textAlign : "left")};
+  width: ${props => (props.width ? props.width : "100%")};
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   font-size: ${({ theme }) => theme.font.size.xxextra};
   font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
@@ -31,28 +32,34 @@ export const SectionsH1 = styled.h1`
   }
   & + p {
     margin-top: 2rem;
+  }
+  & + p {
+    margin-bottom: 2rem;
   }
 `
 
 export const SectionsH2 = styled.h2`
-  width: ${props => (props.fontWeigth ? props.textAlign : "100%")};
-  text-align: ${props => (props.fontWeigth ? props.textAlign : "left")};
-  font-size: ${({ theme }) => theme.font.size.xxextra};
+  width: ${props => (props.width ? props.width : "100%")};
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+  font-size: ${({ theme }) => theme.font.size.xextra};
   font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
-  line-height: 10rem;
-  letter-spacing: -5px;
+  line-height: 9rem;
+  letter-spacing: -3px;
   & > span {
     color: ${({ theme }) => theme.colors.red};
   }
   & + p {
     margin-top: 2rem;
+  }
+  & + p {
+    margin-bottom: 2rem;
   }
 `
 
 export const SectionsH3 = styled.h3`
-  width: ${props => (props.fontWeigth ? props.textAlign : "100%")};
-  text-align: ${props => (props.fontWeigth ? props.textAlign : "left")};
+  width: ${props => (props.width ? props.width : "100%")};
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   font-size: ${({ theme }) => theme.font.size.xxextra};
   font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
@@ -64,11 +71,14 @@ export const SectionsH3 = styled.h3`
   & + p {
     margin-top: 2rem;
   }
+  & + p {
+    margin-bottom: 2rem;
+  }
 `
 
 export const SectionsH4 = styled.h4`
-  width: ${props => (props.fontWeigth ? props.textAlign : "100%")};
-  text-align: ${props => (props.fontWeigth ? props.textAlign : "left")};
+  width: ${props => (props.width ? props.width : "100%")};
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   font-size: ${({ theme }) => theme.font.size.xxlarge};
   font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
@@ -80,8 +90,16 @@ export const SectionsH4 = styled.h4`
   & + p {
     margin-top: 2rem;
   }
+  & + p {
+    margin-bottom: 2rem;
+  }
 `
 
 export const SectionsH5 = styled.h5``
 
 export const SectionsH6 = styled.h6``
+
+export const SectionsP = styled.p`
+  width: ${props => (props.width ? props.width : "100%")};
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+`

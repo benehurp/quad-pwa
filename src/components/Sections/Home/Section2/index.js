@@ -16,13 +16,13 @@ const HomeSection2 = ({
       backgroundPosition=""
       height=""
     >
-      <div class="card">
-        <div class="big-logo-container">
-          <div class="big-logo">
+      <div className="card">
+        <div className="big-logo-container">
+          <div className="big-logo">
             <img src={BigLogoQuad} alt="Símbolo gigante da QuadFinancial" />
           </div>
         </div>
-        <div class="big-logo-description">
+        <div className="big-logo-description">
           <S.TitleH4>
             Sua caminhada para obter retornos absolutos no médio prazo começa
             aqui

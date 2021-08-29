@@ -22,8 +22,8 @@ const HomeSection1 = ({
           <span>Domine</span> os ciclos dos mercados globais
         </S.TitleH1>
       </div>
-      <div class="move-down-container">
-        <img src={ArrowMark} alt="Saiba mais" class="move-down-icon" />
+      <div className="move-down-container">
+        <img src={ArrowMark} alt="Saiba mais" className="move-down-icon" />
       </div>
     </S.Section1Wrapper>
   )
