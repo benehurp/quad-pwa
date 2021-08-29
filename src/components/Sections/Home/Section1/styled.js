@@ -9,7 +9,7 @@ import {
   SectionsH6,
 } from "../../styledSections"
 
-export const SectionOneWrapper = styled(SectionsWrapper)`
+export const Section1Wrapper = styled(SectionsWrapper)`
   .section-container {
     grid-column: 2/3;
   }

@@ -4,6 +4,8 @@ import * as S from "./styled"
 const MiniWideButton = ({
   link,
   children,
+  fontSize,
+  fontWeigth,
   color,
   width,
   height,
@@ -17,6 +19,8 @@ const MiniWideButton = ({
   return (
     <S.ButtonRoundStyledLink
       to={link}
+      fontSize={fontSize}
+      fontWeigth={fontWeigth}
       color={color}
       width={width}
       height={height}

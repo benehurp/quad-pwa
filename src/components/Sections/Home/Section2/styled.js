@@ -9,7 +9,7 @@ import {
   SectionsH6,
 } from "../../styledSections"
 
-export const SectionTwoWrapper = styled(SectionsWrapper)`
+export const Section2Wrapper = styled(SectionsWrapper)`
   .card {
     grid-column: 2/3;
     display: flex;
@@ -27,13 +27,13 @@ export const SectionTwoWrapper = styled(SectionsWrapper)`
     border-radius: 2rem;
     box-shadow: 5px 0px 15px var(--bg-tertiary);
   }
-  .big-logo {
+  .big-logo-container {
     width: 44rem;
     position: relative;
     left: 0;
     top: 0;
   }
-  .big-logo-container {
+  .big-logo {
     position: absolute;
     display: flex;
     align-items: center;

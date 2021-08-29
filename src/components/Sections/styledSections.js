@@ -21,18 +21,11 @@ export const SectionsWrapper = styled.section`
 export const SectionsH1 = styled.h1`
   width: ${props => (props.fontWeigth ? props.textAlign : "100%")};
   text-align: ${props => (props.fontWeigth ? props.textAlign : "left")};
+  font-size: ${({ theme }) => theme.font.size.xxextra};
+  font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
-  font-size: ${props =>
-    props.fontSize
-      ? ({ theme }) => theme.font.size[props.fontSize]
-      : ({ theme }) => theme.font.size.xxextra};
-  font-weight: ${props =>
-    props.fontWeigth
-      ? ({ theme }) => theme.font.weight[props.fontWeigth]
-      : ({ theme }) => theme.font.weight.extrabold};
-  line-height: ${props => (props.lineHeight ? props.lineHeight : "10rem")};
-  letter-spacing: ${props =>
-    props.letterSpacing ? props.letterSpacing : "-5px"};
+  line-height: 10rem;
+  letter-spacing: -5px;
   & > span {
     color: ${({ theme }) => theme.colors.red};
   }
@@ -44,18 +37,11 @@ export const SectionsH1 = styled.h1`
 export const SectionsH2 = styled.h2`
   width: ${props => (props.fontWeigth ? props.textAlign : "100%")};
   text-align: ${props => (props.fontWeigth ? props.textAlign : "left")};
+  font-size: ${({ theme }) => theme.font.size.xxextra};
+  font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
-  font-size: ${props =>
-    props.fontSize
-      ? ({ theme }) => theme.font.size[props.fontSize]
-      : ({ theme }) => theme.font.size.xextra};
-  font-weight: ${props =>
-    props.fontWeigth
-      ? ({ theme }) => theme.font.weight[props.fontWeigth]
-      : ({ theme }) => theme.font.weight.extrabold};
-  line-height: ${props => (props.lineHeight ? props.lineHeight : "6rem")};
-  letter-spacing: ${props =>
-    props.letterSpacing ? props.letterSpacing : "-2px"};
+  line-height: 10rem;
+  letter-spacing: -5px;
   & > span {
     color: ${({ theme }) => theme.colors.red};
   }
@@ -67,18 +53,11 @@ export const SectionsH2 = styled.h2`
 export const SectionsH3 = styled.h3`
   width: ${props => (props.fontWeigth ? props.textAlign : "100%")};
   text-align: ${props => (props.fontWeigth ? props.textAlign : "left")};
+  font-size: ${({ theme }) => theme.font.size.xxextra};
+  font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
-  font-size: ${props =>
-    props.fontSize
-      ? ({ theme }) => theme.font.size[props.fontSize]
-      : ({ theme }) => theme.font.size.extra};
-  font-weight: ${props =>
-    props.fontWeigth
-      ? ({ theme }) => theme.font.weight[props.fontWeigth]
-      : ({ theme }) => theme.font.weight.extrabold};
-  line-height: ${props => (props.lineHeight ? props.lineHeight : "6rem")};
-  letter-spacing: ${props =>
-    props.letterSpacing ? props.letterSpacing : "-2px"};
+  line-height: 10rem;
+  letter-spacing: -5px;
   & > span {
     color: ${({ theme }) => theme.colors.red};
   }
@@ -90,18 +69,11 @@ export const SectionsH3 = styled.h3`
 export const SectionsH4 = styled.h4`
   width: ${props => (props.fontWeigth ? props.textAlign : "100%")};
   text-align: ${props => (props.fontWeigth ? props.textAlign : "left")};
+  font-size: ${({ theme }) => theme.font.size.xxlarge};
+  font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
-  font-size: ${props =>
-    props.fontSize
-      ? ({ theme }) => theme.font.size[props.fontSize]
-      : ({ theme }) => theme.font.size.xxlarge};
-  font-weight: ${props =>
-    props.fontWeigth
-      ? ({ theme }) => theme.font.weight[props.fontWeigth]
-      : ({ theme }) => theme.font.weight.extrabold};
-  line-height: ${props => (props.lineHeight ? props.lineHeight : "3.2rem")};
-  letter-spacing: ${props =>
-    props.letterSpacing ? props.letterSpacing : "-2px"};
+  line-height: 3.2rem;
+  letter-spacing: -2px;
   & > span {
     color: ${({ theme }) => theme.colors.red};
   }

@@ -3,14 +3,14 @@ import * as S from "./styled"
 import ArrowMark from "../../../../images/svg/arrow-mark.svg"
 import ImageSection from "../../../../images/home-section1.jpg"
 
-const HomeSectionOne = ({
+const HomeSection1 = ({
   backgroundColor,
   backgroundImage,
   backgroundPosition,
   height,
 }) => {
   return (
-    <S.SectionOneWrapper
+    <S.Section1Wrapper
       backgroundColor=""
       backgroundImage={ImageSection}
       backgroundPosition=""
@@ -25,8 +25,8 @@ const HomeSectionOne = ({
       <div class="move-down-container">
         <img src={ArrowMark} alt="Saiba mais" class="move-down-icon" />
       </div>
-    </S.SectionOneWrapper>
+    </S.Section1Wrapper>
   )
 }
 
-export default HomeSectionOne
+export default HomeSection1

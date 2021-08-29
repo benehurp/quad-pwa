@@ -2,8 +2,14 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const ButtonRoundStyledLink = styled(Link)`
-  font-size: ${({ theme }) => theme.font.size.xxsmall};
-  font-weight: ${({ theme }) => theme.font.weight.semibold};
+  font-size: ${props =>
+    props.fontSize
+      ? ({ theme }) => theme.font.size[props.fontSize]
+      : ({ theme }) => theme.font.size.xxxsmall};
+  font-weight: ${props =>
+    props.fontWeigth
+      ? ({ theme }) => theme.font.weight[props.fontWeigth]
+      : ({ theme }) => theme.font.weight.semibold};
   width: ${props => (props.width ? props.width : "9rem")};
   height: ${props => (props.height ? props.height : "2.5rem")};
   text-transform: uppercase;

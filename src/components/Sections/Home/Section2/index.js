@@ -3,22 +3,22 @@ import * as S from "./styled"
 import BigLogoQuad from "../../../../images/svg/logo-Q.svg"
 import ImageSection from "../../../../images/home-section2.jpg"
 
-const HomeSectionTwo = ({
+const HomeSection2 = ({
   backgroundColor,
   backgroundImage,
   backgroundPosition,
   height,
 }) => {
   return (
-    <S.SectionTwoWrapper
+    <S.Section2Wrapper
       backgroundColor=""
       backgroundImage={ImageSection}
       backgroundPosition=""
       height=""
     >
       <div class="card">
-        <div class="big-logo">
-          <div class="big-logo-container">
+        <div class="big-logo-container">
+          <div class="big-logo">
             <img src={BigLogoQuad} alt="Símbolo gigante da QuadFinancial" />
           </div>
         </div>
@@ -39,8 +39,8 @@ const HomeSectionTwo = ({
           </p>
         </div>
       </div>
-    </S.SectionTwoWrapper>
+    </S.Section2Wrapper>
   )
 }
 
-export default HomeSectionTwo
+export default HomeSection2
