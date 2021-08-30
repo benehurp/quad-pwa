@@ -67,6 +67,9 @@ export const CardGradientBase = styled.div`
       ${props => (props.gradientPercent2 ? props.gradientPercent2 : "90%")}
   );
   border-radius: ${props => (props.borderRadius ? props.borderRadius : "2rem")};
+  &:hover {
+    filter: drop-shadow(3px 5px 20px #141414);
+  }
 `
 
 export const SectionsH1 = styled.h1`
@@ -164,7 +167,27 @@ export const SectionsH5 = styled.h5`
   }
 `
 
-export const SectionsH6 = styled.h6``
+export const SectionsH6 = styled.h6`
+  width: ${props => (props.width ? props.width : "100%")};
+  text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+  font-size: ${({ theme }) => theme.font.size.medium};
+  font-weight: ${props =>
+    props.fontWeight
+      ? ({ theme }) => theme.font.weight[props.fontWeight]
+      : ({ theme }) => theme.font.weight.extrabold};
+  text-transform: uppercase;
+  line-height: 2.4rem;
+  letter-spacing: 0px;
+  & > span {
+    color: ${({ theme }) => theme.colors.red};
+  }
+  & + p {
+    margin-top: 2rem;
+  }
+  & + p {
+    margin-bottom: 2rem;
+  }
+`
 
 export const SectionsP = styled.p`
   width: ${props => (props.width ? props.width : "100%")};

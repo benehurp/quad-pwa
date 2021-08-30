@@ -11,11 +11,29 @@ import {
   SectionsP,
 } from "../../styledSections"
 
-export const SectionXWrapper = styled(SectionsWrapper)`
+export const Section5Wrapper = styled(SectionsWrapper)`
   grid-column: 2/3;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .container {
+    width: 70%;
+  }
+  .number {
+    display: block;
+    font-size: 18rem;
+    font-weight: 800;
+    position: absolute;
+    top: -5.8rem;
+    left: 3rem;
+    color: ${({ theme }) => theme.colors.red2};
+  }
+  ul {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+  }
 `
 
 export const TitleH1 = styled(SectionsH1)``
@@ -32,4 +50,10 @@ export const TitleH6 = styled(SectionsH6)``
 
 export const Paragraph = styled(SectionsP)``
 
-export const Card = styled(CardGradientBase)``
+export const Card = styled(CardGradientBase)`
+  padding: 16rem 3rem 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+`

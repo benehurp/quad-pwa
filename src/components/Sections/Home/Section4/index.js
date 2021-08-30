@@ -39,7 +39,7 @@ const HomeSection4 = ({
           <img src={Quotes} alt="Símbolo de aspas duplas" className="left" />
           <img src={Quotes} alt="Símbolo de aspas duplas" className="right" />
         </div>
-        <ul class="hs4-testimonial">
+        <ul>
           <S.Card as="li">
             <div className="avatar-container">
               <img className="avatar" src={Avatar} alt="Avatar do perfil" />

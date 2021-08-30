@@ -5,6 +5,7 @@ import HomeSection1 from "../components/Sections/Home/Section1"
 import HomeSection2 from "../components/Sections/Home/Section2"
 import HomeSection3 from "../components/Sections/Home/Section3"
 import HomeSection4 from "../components/Sections/Home/Section4"
+import HomeSection5 from "../components/Sections/Home/Section5"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <HomeSection2 />
     <HomeSection3 />
     <HomeSection4 />
+    <HomeSection5 />
   </Layout>
 )
 
