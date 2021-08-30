@@ -11,11 +11,21 @@ import {
   SectionsP,
 } from "../../styledSections"
 
-export const SectionXWrapper = styled(SectionsWrapper)`
+export const SectionWrapper = styled(SectionsWrapper)`
   grid-column: 2/3;
   display: flex;
   align-items: center;
   justify-content: center;
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
+  }
 `
 
 export const TitleH1 = styled(SectionsH1)``

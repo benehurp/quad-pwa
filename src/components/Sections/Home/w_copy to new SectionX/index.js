@@ -14,9 +14,9 @@ const HomeSectionX = ({
   height,
 }) => {
   return (
-    <S.SectionXWrapper
+    <S.SectionWrapper
       backgroundType="color"
-      backgroundColor="grayTwo"
+      backgroundColor="gray2"
       backgroundImage=""
       backgroundPosition=""
       gradientDeg=""
@@ -26,8 +26,11 @@ const HomeSectionX = ({
       gradientPercent2=""
       height=""
     >
-      <div>Ok</div>
-    </S.SectionXWrapper>
+      <div className="container">
+        <div clasName="left"></div>
+        <div clasName="right"></div>
+      </div>
+    </S.SectionWrapper>
   )
 }
 

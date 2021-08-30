@@ -11,7 +11,7 @@ import {
   SectionsP,
 } from "../../styledSections"
 
-export const Section2Wrapper = styled(SectionsWrapper)`
+export const SectionWrapper = styled(SectionsWrapper)`
   grid-column: 2/3;
   display: flex;
   align-items: center;

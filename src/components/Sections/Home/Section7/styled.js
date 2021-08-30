@@ -16,15 +16,39 @@ export const SectionWrapper = styled(SectionsWrapper)`
   display: flex;
   align-items: center;
   justify-content: center;
+
   .container {
-    display: flex;
     width: 70%;
   }
-  .left {
-    width: 50%;
+  ul {
+    margin-top: 4rem;
+    gap: 2rem;
+    display: flex;
+    margin-top: 22rem;
+    align-items: center;
   }
-  .right {
-    width: 50%;
+  .person {
+    position: absolute;
+    top: -22rem;
+    padding: 3rem;
+
+    & img {
+      max-width: 100%;
+      display: block;
+      &:nth-child(2) {
+        max-width: 10%;
+      }
+    }
+  }
+  .stamp {
+    margin-top: 3rem;
+    & img {
+      width: 80%;
+      opacity: 0.3;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 `
 
@@ -43,6 +67,17 @@ export const TitleH6 = styled(SectionsH6)``
 export const Paragraph = styled(SectionsP)``
 
 export const Card = styled(CardGradientBase)`
-  padding: 3rem;
-  margin-bottom: 2rem;
+  padding: 15rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 70rem;
+  top: 0;
+  &:nth-child(2) {
+    height: 78rem;
+    & .person {
+      width: 85%;
+      top: -23rem;
+    }
+  }
 `

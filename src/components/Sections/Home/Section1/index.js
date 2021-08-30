@@ -16,7 +16,7 @@ const HomeSection1 = ({
   height,
 }) => {
   return (
-    <S.Section1Wrapper
+    <S.SectionWrapper
       backgroundType="image"
       backgroundColor=""
       backgroundImage={ImageSection}
@@ -36,7 +36,7 @@ const HomeSection1 = ({
           <img src={ArrowMark} alt="Saiba mais" className="move-down-icon" />
         </div>
       </div>
-    </S.Section1Wrapper>
+    </S.SectionWrapper>
   )
 }
 

@@ -11,7 +11,7 @@ import {
   SectionsP,
 } from "../../styledSections"
 
-export const Section5Wrapper = styled(SectionsWrapper)`
+export const SectionWrapper = styled(SectionsWrapper)`
   grid-column: 2/3;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@ export const Section5Wrapper = styled(SectionsWrapper)`
   .number {
     display: block;
     font-size: 18rem;
-    font-weight: 800;
+    font-weight: ${({ theme }) => theme.font.weight.extrabold};
     position: absolute;
     top: -5.8rem;
     left: 3rem;

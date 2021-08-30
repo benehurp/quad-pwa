@@ -10,18 +10,22 @@ import {
   SectionsP,
 } from "../../styledSections"
 
-export const Section3Wrapper = styled(SectionsWrapper)`
+export const SectionWrapper = styled(SectionsWrapper)`
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   .container {
-    grid-column: 2/3;
+    width: 70%;
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .left {
+    width: 50%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-end;
-    width: 50%;
   }
   .right {
     display: flex;

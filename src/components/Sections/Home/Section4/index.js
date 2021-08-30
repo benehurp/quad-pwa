@@ -17,7 +17,7 @@ const HomeSection4 = ({
   height,
 }) => {
   return (
-    <S.Section4Wrapper
+    <S.SectionWrapper
       backgroundType="gradient"
       backgroundColor=""
       backgroundImage=""
@@ -93,7 +93,7 @@ const HomeSection4 = ({
           </S.Card>
         </ul>
       </div>
-    </S.Section4Wrapper>
+    </S.SectionWrapper>
   )
 }
 

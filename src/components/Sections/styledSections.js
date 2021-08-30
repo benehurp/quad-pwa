@@ -1,6 +1,14 @@
 import styled, { css } from "styled-components"
 
 export const SectionsWrapper = styled.section`
+  hr {
+    width: 80%;
+    margin: 1.5rem 0;
+    background: ${({ theme }) => theme.colors.red};
+    height: 1px;
+    border: 0px;
+  }
+
   grid-template-columns: ${({ theme }) => theme.breakingPoints.desktop};
   display: grid;
   align-items: center;
@@ -95,7 +103,7 @@ export const SectionsH2 = styled.h2`
   font-size: ${({ theme }) => theme.font.size.xextra};
   font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
-  line-height: 8rem;
+  line-height: 6rem;
   letter-spacing: -3px;
   & > span {
     color: ${({ theme }) => theme.colors.red};
@@ -168,18 +176,20 @@ export const SectionsH6 = styled.h6`
     color: ${({ theme }) => theme.colors.red};
   }
   & + p {
-    margin-top: 2rem;
+    margin-top: ${props => (props.marginTop ? props.marginTop : "2rem")};
   }
 `
 
 export const SectionsP = styled.p`
   width: ${props => (props.width ? props.width : "100%")};
+  text-transform: ${props =>
+    props.textTransform ? props.textTransform : "none"};
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   font-size: ${props =>
     props.fontSize
       ? ({ theme }) => theme.font.size[props.fontSize]
       : ({ theme }) => theme.font.size.small};
   & + div {
-    margin-top: 2rem;
+    margin-top: ${props => (props.marginTop ? props.marginTop : "2rem")};
   }
 `

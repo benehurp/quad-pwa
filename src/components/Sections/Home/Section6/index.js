@@ -16,7 +16,7 @@ const HomeSection6 = ({
   height,
 }) => {
   return (
-    <S.Section6Wrapper
+    <S.SectionWrapper
       backgroundType="image"
       backgroundColor=""
       backgroundImage={ImageSection}
@@ -78,7 +78,7 @@ const HomeSection6 = ({
         </div>
         <div className="right"></div>
       </div>
-    </S.Section6Wrapper>
+    </S.SectionWrapper>
   )
 }
 

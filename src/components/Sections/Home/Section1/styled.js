@@ -9,9 +9,13 @@ import {
   SectionsH6,
 } from "../../styledSections"
 
-export const Section1Wrapper = styled(SectionsWrapper)`
+export const SectionWrapper = styled(SectionsWrapper)`
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .container {
-    grid-column: 2/3;
+    width: 70%;
   }
   .move-down-container {
     display: flex;
