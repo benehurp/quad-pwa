@@ -135,7 +135,7 @@ export const SectionsH4 = styled.h4`
   font-size: ${({ theme }) => theme.font.size.xxlarge};
   font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
-  line-height: 3.2rem;
+  line-height: 3.4rem;
   letter-spacing: 0px;
   & > span {
     color: ${({ theme }) => theme.colors.red};

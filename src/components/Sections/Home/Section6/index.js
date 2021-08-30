@@ -68,6 +68,7 @@ const HomeSection6 = ({
           <MiniWideButton
             link="/"
             width="100%"
+            height="5rem"
             padding="1.2rem"
             borderRadius=".8rem"
             fontSize="medium"

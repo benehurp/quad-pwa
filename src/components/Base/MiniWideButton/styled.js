@@ -11,7 +11,7 @@ export const ButtonRoundStyledLink = styled(Link)`
       ? ({ theme }) => theme.font.weight[props.fontWeigth]
       : ({ theme }) => theme.font.weight.semibold};
   width: ${props => (props.width ? props.width : "9rem")};
-  //height: ${props => (props.height ? props.height : "2.5rem")};
+  height: ${props => (props.height ? props.height : "3rem")};
   text-transform: uppercase;
   color: ${props =>
     props.color

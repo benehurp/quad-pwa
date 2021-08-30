@@ -46,7 +46,8 @@ const HomeSection3 = ({
           </S.Paragraph>
           <MiniWideButton
             link="/"
-            width="95%"
+            width="100%"
+            height="5rem"
             padding="1.2rem"
             borderRadius=".8rem"
             fontSize="medium"
