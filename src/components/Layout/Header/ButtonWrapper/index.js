@@ -12,10 +12,10 @@ const ButtonsWrapper = () => {
         color={"blue"}
         width={"15rem"}
         height={"2.5rem"}
-        gradientColorOne={"white"}
-        gradientColorTwo={"white"}
-        gradientPercentOne={"0%"}
-        gradientPercentTwo={"100%"}
+        gradientColor1={"white"}
+        gradientColor2={"white"}
+        gradientPercent1={"0%"}
+        gradientPercent2={"100%"}
         gradientDeg={"90deg"}
         borderRadius={"2rem"}
       >

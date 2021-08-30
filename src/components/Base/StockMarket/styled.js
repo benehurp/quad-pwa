@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const StockMarketWrapper = styled.aside`
   height: 6rem;
-  background-color: ${({ theme }) => theme.colors.grayTwo};
+  background-color: ${({ theme }) => theme.colors.gray2};
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.colors.white};

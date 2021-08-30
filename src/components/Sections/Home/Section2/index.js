@@ -4,40 +4,54 @@ import BigLogoQuad from "../../../../images/svg/logo-Q.svg"
 import ImageSection from "../../../../images/home-section2.jpg"
 
 const HomeSection2 = ({
+  backgroundType,
   backgroundColor,
   backgroundImage,
   backgroundPosition,
+  gradientDeg,
+  gradientColor1,
+  gradientColor2,
+  gradientPercent1,
+  gradientPercent2,
   height,
 }) => {
   return (
     <S.Section2Wrapper
+      backgroundType="image"
       backgroundColor=""
       backgroundImage={ImageSection}
       backgroundPosition=""
+      gradientDeg=""
+      gradientColor1=""
+      gradientColor2=""
+      gradientPercent1=""
+      gradientPercent2=""
       height=""
     >
-      <div className="card">
-        <div className="big-logo-container">
-          <div className="big-logo">
-            <img src={BigLogoQuad} alt="Símbolo gigante da QuadFinancial" />
+      <div className="container">
+        <S.Card width="70%">
+          <div className="left">
+            <div className="big-logo">
+              <img src={BigLogoQuad} alt="Símbolo gigante da QuadFinancial" />
+            </div>
           </div>
-        </div>
-        <div className="big-logo-description">
-          <S.TitleH4>
-            Sua caminhada para obter retornos absolutos no médio prazo começa
-            aqui
-          </S.TitleH4>
-          <p>
-            Oferecemos análises e recomendações que vão ajudá-lo a estruturar
-            sua carteira de forma adequada para enfrentar cada etapa do ciclo de
-            mercado.
-          </p>
-          <p>
-            Seguindo os sinais do Método M4D, compomos estratégias de portfólio
-            agressivas quando o risco é baixo e defensivas quando o risco de
-            correção nos preços for elevado.
-          </p>
-        </div>
+          <div className="right">
+            <S.TitleH4 width="80%">
+              Sua caminhada para obter retornos absolutos no médio prazo começa
+              aqui
+            </S.TitleH4>
+            <S.Paragraph width="80%">
+              Oferecemos análises e recomendações que vão ajudá-lo a estruturar
+              sua carteira de forma adequada para enfrentar cada etapa do ciclo
+              de mercado.
+            </S.Paragraph>
+            <p>
+              Seguindo os sinais do Método M4D, compomos estratégias de
+              portfólio agressivas quando o risco é baixo e defensivas quando o
+              risco de correção nos preços for elevado.
+            </p>
+          </div>
+        </S.Card>
       </div>
     </S.Section2Wrapper>
   )

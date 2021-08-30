@@ -11,14 +11,11 @@ import {
 } from "../../styledSections"
 
 export const Section3Wrapper = styled(SectionsWrapper)`
-  grid-column: 2/3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   .container {
+    grid-column: 2/3;
     display: flex;
-    width: 90%;
+    align-items: center;
+    justify-content: center;
   }
   .left {
     display: flex;

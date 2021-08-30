@@ -114,7 +114,6 @@ const GlobalStyles = createGlobalStyle`
       }
       ${({ theme }) => css`
         body {
-          line-height: 1;
           font-family: ${theme.font.family};
           color: ${theme.colors.white};
         }

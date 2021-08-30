@@ -20,15 +20,15 @@ export const ButtonRoundStyledLink = styled(Link)`
   background-image: linear-gradient(
     ${props => (props.gradientDeg ? props.gradientDeg : "94deg")},
     ${props =>
-        props.gradientColorOne
-          ? ({ theme }) => theme.colors[props.gradientColorOne]
-          : ({ theme }) => theme.colors.redTwo}
-      ${props => (props.gradientPercentOne ? props.gradientPercentOne : "15%")},
+        props.gradientColor1
+          ? ({ theme }) => theme.colors[props.gradientColor1]
+          : ({ theme }) => theme.colors.red2}
+      ${props => (props.gradientPercent1 ? props.gradientPercent1 : "15%")},
     ${props =>
-        props.gradientColorTwo
-          ? ({ theme }) => theme.colors[props.gradientColorTwo]
-          : ({ theme }) => theme.colors.grayTwo}
-      ${props => (props.gradientPercentTwo ? props.gradientPercentTwo : "125%")}
+        props.gradientColor2
+          ? ({ theme }) => theme.colors[props.gradientColor2]
+          : ({ theme }) => theme.colors.gray2}
+      ${props => (props.gradientPercent2 ? props.gradientPercent2 : "125%")}
   );
   border-radius: ${props => (props.borderRadius ? props.borderRadius : "2rem")};
   letter-spacing: 0.7px;

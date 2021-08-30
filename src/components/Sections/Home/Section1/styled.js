@@ -10,30 +10,23 @@ import {
 } from "../../styledSections"
 
 export const Section1Wrapper = styled(SectionsWrapper)`
-  .section-container {
+  .container {
     grid-column: 2/3;
-  }
-  .title-text-highlight {
-    margin: 0;
-    padding: 0;
-    color: ${({ theme }) => theme.colors.red};
   }
   .move-down-container {
-    position: absolute;
-    top: 92rem;
-    grid-column: 2/3;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 100rem;
   }
   .move-down-icon {
     position: relative;
-    width: 8rem;
-    top: -1rem;
+    width: 6rem;
     animation-name: moveDown;
     animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-duration: 1.2s;
   }
   @keyframes moveDown {
     0% {
@@ -41,7 +34,7 @@ export const Section1Wrapper = styled(SectionsWrapper)`
       opacity: 1;
     }
     100% {
-      top: 2rem;
+      top: 8rem;
       opacity: 0;
     }
   }

@@ -16,10 +16,10 @@ const TelegramFooter = () => {
         color={"blue"}
         width={"30rem"}
         height={"3rem"}
-        gradientColorOne={"white"}
-        gradientColorTwo={"white"}
-        gradientPercentOne={"0%"}
-        gradientPercentTwo={"100%"}
+        gradientColor1={"white"}
+        gradientColor2={"white"}
+        gradientPercent1={"0%"}
+        gradientPercent2={"100%"}
         gradientDeg={"90deg"}
         borderRadius={"0.7rem"}
       >

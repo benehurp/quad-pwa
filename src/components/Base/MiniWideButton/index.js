@@ -10,10 +10,10 @@ const MiniWideButton = ({
   width,
   height,
   gradientDeg,
-  gradientColorOne,
-  gradientColorTwo,
-  gradientPercentOne,
-  gradientPercentTwo,
+  gradientColor1,
+  gradientColor2,
+  gradientPercent1,
+  gradientPercent2,
   borderRadius,
 }) => {
   return (
@@ -25,10 +25,10 @@ const MiniWideButton = ({
       width={width}
       height={height}
       gradientDeg={gradientDeg}
-      gradientColorOne={gradientColorOne}
-      gradientColorTwo={gradientColorTwo}
-      gradientPercentOne={gradientPercentOne}
-      gradientPercentTwo={gradientPercentTwo}
+      gradientColor1={gradientColor1}
+      gradientColor2={gradientColor2}
+      gradientPercent1={gradientPercent1}
+      gradientPercent2={gradientPercent2}
       borderRadius={borderRadius}
     >
       {children}
