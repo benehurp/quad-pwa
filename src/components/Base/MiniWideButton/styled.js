@@ -11,7 +11,7 @@ export const ButtonRoundStyledLink = styled(Link)`
       ? ({ theme }) => theme.font.weight[props.fontWeigth]
       : ({ theme }) => theme.font.weight.semibold};
   width: ${props => (props.width ? props.width : "9rem")};
-  height: ${props => (props.height ? props.height : "2.5rem")};
+  //height: ${props => (props.height ? props.height : "2.5rem")};
   text-transform: uppercase;
   color: ${props =>
     props.color
@@ -31,6 +31,9 @@ export const ButtonRoundStyledLink = styled(Link)`
       ${props => (props.gradientPercent2 ? props.gradientPercent2 : "125%")}
   );
   border-radius: ${props => (props.borderRadius ? props.borderRadius : "2rem")};
+  margin-top: ${props => (props.marginTop ? props.marginTop : "none")};
+  box-sizing: border-box;
+  padding: ${props => (props.padding ? props.padding : "0.3rem")};
   letter-spacing: 0.7px;
   text-align: center;
   display: inline-flex;

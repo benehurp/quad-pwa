@@ -29,7 +29,7 @@ const HomeSection2 = ({
       height=""
     >
       <div className="container">
-        <S.Card width="70%">
+        <S.Card width="100%">
           <div className="left">
             <div className="big-logo">
               <img src={BigLogoQuad} alt="Símbolo gigante da QuadFinancial" />
@@ -45,11 +45,11 @@ const HomeSection2 = ({
               sua carteira de forma adequada para enfrentar cada etapa do ciclo
               de mercado.
             </S.Paragraph>
-            <p>
+            <S.Paragraph width="80%">
               Seguindo os sinais do Método M4D, compomos estratégias de
               portfólio agressivas quando o risco é baixo e defensivas quando o
               risco de correção nos preços for elevado.
-            </p>
+            </S.Paragraph>
           </div>
         </S.Card>
       </div>

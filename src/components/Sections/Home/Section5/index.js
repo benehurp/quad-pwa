@@ -38,8 +38,8 @@ const HomeSection5 = ({
           <S.Card
             as="li"
             gradientDeg="-60deg"
-            gradientColor1="gray"
             gradientColor1="red2"
+            gradientColor2="gray"
             gradientPercent1="10%"
             gradientPercent2="90%"
           >
@@ -65,8 +65,8 @@ const HomeSection5 = ({
           <S.Card
             as="li"
             gradientDeg="-60deg"
-            gradientColor1="gray"
             gradientColor1="red2"
+            gradientColor2="gray"
             gradientPercent1="10%"
             gradientPercent2="90%"
           >
@@ -93,8 +93,8 @@ const HomeSection5 = ({
           <S.Card
             as="li"
             gradientDeg="-60deg"
-            gradientColor1="gray"
             gradientColor1="red2"
+            gradientColor2="gray"
             gradientPercent1="10%"
             gradientPercent2="90%"
           >

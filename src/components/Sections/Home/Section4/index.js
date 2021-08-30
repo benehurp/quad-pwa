@@ -58,7 +58,11 @@ const HomeSection4 = ({
               </S.Paragraph>
             </div>
             <div className="btn-right">
-              <MiniWideButton gradientColor1="red" gradientColor2="red">
+              <MiniWideButton
+                padding="0.6rem"
+                gradientColor1="red"
+                gradientColor2="red"
+              >
                 Saiba mais
               </MiniWideButton>
             </div>
@@ -78,7 +82,11 @@ const HomeSection4 = ({
               </S.Paragraph>
             </div>
             <div className="btn-right">
-              <MiniWideButton gradientColor1="red" gradientColor2="red">
+              <MiniWideButton
+                padding="0.6rem"
+                gradientColor1="red"
+                gradientColor2="red"
+              >
                 Saiba mais
               </MiniWideButton>
             </div>

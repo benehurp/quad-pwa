@@ -8,7 +8,8 @@ const MiniWideButton = ({
   fontWeigth,
   color,
   width,
-  height,
+  padding,
+  marginTop,
   gradientDeg,
   gradientColor1,
   gradientColor2,
@@ -23,7 +24,8 @@ const MiniWideButton = ({
       fontWeigth={fontWeigth}
       color={color}
       width={width}
-      height={height}
+      padding={padding}
+      marginTop={marginTop}
       gradientDeg={gradientDeg}
       gradientColor1={gradientColor1}
       gradientColor2={gradientColor2}

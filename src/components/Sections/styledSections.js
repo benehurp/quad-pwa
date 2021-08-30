@@ -67,6 +67,7 @@ export const CardGradientBase = styled.div`
       ${props => (props.gradientPercent2 ? props.gradientPercent2 : "90%")}
   );
   border-radius: ${props => (props.borderRadius ? props.borderRadius : "2rem")};
+  box-sizing: border-box;
   &:hover {
     filter: drop-shadow(3px 5px 20px #141414);
   }
@@ -86,9 +87,6 @@ export const SectionsH1 = styled.h1`
   & + p {
     margin-top: 2rem;
   }
-  & + p {
-    margin-bottom: 2rem;
-  }
 `
 
 export const SectionsH2 = styled.h2`
@@ -104,9 +102,6 @@ export const SectionsH2 = styled.h2`
   }
   & + p {
     margin-top: 2rem;
-  }
-  & + p {
-    margin-bottom: 2rem;
   }
 `
 
@@ -124,9 +119,6 @@ export const SectionsH3 = styled.h3`
   & + p {
     margin-top: 2rem;
   }
-  & + p {
-    margin-bottom: 2rem;
-  }
 `
 
 export const SectionsH4 = styled.h4`
@@ -143,9 +135,6 @@ export const SectionsH4 = styled.h4`
   & + p {
     margin-top: 2rem;
   }
-  & + p {
-    margin-bottom: 2rem;
-  }
 `
 
 export const SectionsH5 = styled.h5`
@@ -161,9 +150,6 @@ export const SectionsH5 = styled.h5`
   }
   & + p {
     margin-top: 2rem;
-  }
-  & + p {
-    margin-bottom: 2rem;
   }
 `
 
@@ -184,9 +170,6 @@ export const SectionsH6 = styled.h6`
   & + p {
     margin-top: 2rem;
   }
-  & + p {
-    margin-bottom: 2rem;
-  }
 `
 
 export const SectionsP = styled.p`
@@ -196,4 +179,7 @@ export const SectionsP = styled.p`
     props.fontSize
       ? ({ theme }) => theme.font.size[props.fontSize]
       : ({ theme }) => theme.font.size.small};
+  & + div {
+    margin-top: 2rem;
+  }
 `

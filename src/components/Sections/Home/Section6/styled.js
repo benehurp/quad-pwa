@@ -11,7 +11,7 @@ import {
   SectionsP,
 } from "../../styledSections"
 
-export const Section2Wrapper = styled(SectionsWrapper)`
+export const Section6Wrapper = styled(SectionsWrapper)`
   grid-column: 2/3;
   display: flex;
   align-items: center;
@@ -21,31 +21,13 @@ export const Section2Wrapper = styled(SectionsWrapper)`
     width: 70%;
   }
   .left {
-    width: 100%;
-    position: relative;
-    left: 0;
-    top: 0;
+    width: 50%;
   }
   .right {
-    width: 100%;
-  }
-  .big-logo {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: -24rem;
-    left: -23rem;
-    width: 58rem;
-    height: auto;
-  }
-  .big-logo-title {
-    margin-bottom: 2rem;
-    font-size: ${({ theme }) => theme.font.size.xlarge};
-    line-height: 2.8rem;
-    text-transform: uppercase;
-    font-weight: ${({ theme }) => theme.font.weight.extrabold};
+    width: 50%;
   }
 `
+
 export const TitleH1 = styled(SectionsH1)``
 
 export const TitleH2 = styled(SectionsH2)``
@@ -60,4 +42,7 @@ export const TitleH6 = styled(SectionsH6)``
 
 export const Paragraph = styled(SectionsP)``
 
-export const Card = styled(CardGradientBase)``
+export const Card = styled(CardGradientBase)`
+  padding: 3rem;
+  margin-bottom: 2rem;
+`

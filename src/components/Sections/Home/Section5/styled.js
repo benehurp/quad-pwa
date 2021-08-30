@@ -51,7 +51,7 @@ export const TitleH6 = styled(SectionsH6)``
 export const Paragraph = styled(SectionsP)``
 
 export const Card = styled(CardGradientBase)`
-  padding: 16rem 3rem 0;
+  padding: 16rem 3rem 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
