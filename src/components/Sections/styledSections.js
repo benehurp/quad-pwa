@@ -50,9 +50,8 @@ export const SectionsWrapper = styled.section`
       background-repeat: no-repeat;
       background-size: cover;
     `}
-  height: ${props =>
-    props.height ? ({ theme }) => theme.colors[props.height] : "80rem"};
-  padding: 15rem;
+  height: ${props => (props.height ? props.height : "auto")};
+  min-height: 100vh;
 `
 
 export const CardGradientBase = styled.div`

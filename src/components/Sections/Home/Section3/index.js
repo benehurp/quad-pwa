@@ -35,10 +35,10 @@ const HomeSection3 = ({
             src={Rotate3d}
             alt="Clique no cubo para rotacionar"
           ></img>
-          <S.TitleH2 width="95%" textAlign="right">
+          <S.TitleH2 width="75%" textAlign="right">
             Mercado em quatro dimensões
           </S.TitleH2>
-          <S.Paragraph width="95%" textAlign="right">
+          <S.Paragraph width="85%" textAlign="right">
             Analisamos o mercado sobre a ótica inédita do Método M4D, uma
             abordagem de investimentos desenvolvida por Jarbas Gambogi há mais
             de 20 anos, e que compõe nossa própria forma de identificar os
@@ -46,7 +46,7 @@ const HomeSection3 = ({
           </S.Paragraph>
           <MiniWideButton
             link="/"
-            width="100%"
+            width="85%"
             height="5rem"
             padding="1.2rem"
             borderRadius=".8rem"

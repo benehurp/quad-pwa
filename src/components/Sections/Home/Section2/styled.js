@@ -12,13 +12,9 @@ import {
 } from "../../styledSections"
 
 export const SectionWrapper = styled(SectionsWrapper)`
-  grid-column: 2/3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   .container {
-    display: flex;
-    width: 70%;
+    grid-column: 2/3;
+    margin: 8rem;
   }
   .left {
     width: 100%;
@@ -28,14 +24,18 @@ export const SectionWrapper = styled(SectionsWrapper)`
   }
   .right {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .big-logo {
     position: absolute;
     display: flex;
     align-items: center;
-    top: -24rem;
+    top: -25rem;
     left: -23rem;
-    width: 58rem;
+    width: 60rem;
     height: auto;
   }
   .big-logo-title {

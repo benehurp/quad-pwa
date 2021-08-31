@@ -25,7 +25,7 @@ const HomeSection5 = ({
       gradientColor2=""
       gradientPercent1=""
       gradientPercent2=""
-      height="90rem"
+      height="auto"
     >
       <div className="container">
         <S.TitleH4>

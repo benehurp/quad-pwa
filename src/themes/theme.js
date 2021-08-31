@@ -13,7 +13,7 @@ export default {
     green: "#2fa700",
   },
   breakingPoints: {
-    desktop: "1fr minmax(320px, 1080px) 1fr",
+    desktop: "1fr minmax(320px, 1024px) 1fr",
   },
   font: {
     family: "'Montserrat', sans-serif",

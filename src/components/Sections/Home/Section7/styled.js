@@ -12,24 +12,20 @@ import {
 } from "../../styledSections"
 
 export const SectionWrapper = styled(SectionsWrapper)`
-  grid-column: 2/3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   .container {
-    width: 70%;
+    grid-column: 2/3;
+    width: 100%;
+    padding: 10rem 0;
   }
   ul {
-    margin-top: 4rem;
     gap: 2rem;
     display: flex;
-    margin-top: 22rem;
+    margin-top: 26rem;
     align-items: center;
   }
   .person {
     position: absolute;
-    top: -22rem;
+    top: -30rem;
     padding: 3rem;
 
     & img {
@@ -67,7 +63,7 @@ export const TitleH6 = styled(SectionsH6)``
 export const Paragraph = styled(SectionsP)``
 
 export const Card = styled(CardGradientBase)`
-  padding: 15rem 3rem 3rem;
+  padding: 17rem 3rem 3rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -77,7 +73,7 @@ export const Card = styled(CardGradientBase)`
     height: 78rem;
     & .person {
       width: 85%;
-      top: -23rem;
+      top: -28rem;
     }
   }
 `

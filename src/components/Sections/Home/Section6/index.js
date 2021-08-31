@@ -26,7 +26,7 @@ const HomeSection6 = ({
       gradientColor2=""
       gradientPercent1=""
       gradientPercent2=""
-      height="100vh"
+      height=""
     >
       <div className="container">
         <div className="left">

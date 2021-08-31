@@ -15,10 +15,10 @@ const HomeSection7 = () => {
       backgroundPosition=""
       gradientDeg="160deg"
       gradientColor1=""
-      gradientColor2=""
+      gradientColor2="gray"
       gradientPercent1="0%"
       gradientPercent2="95%"
-      height="100vh"
+      height=""
     >
       <div className="container">
         <S.TitleH4>
@@ -147,6 +147,7 @@ const HomeSection7 = () => {
           fontSize="medium"
           marginTop="2rem"
           gradientDeg="-160deg"
+          gradientPercent1="-10%"
         >
           Conhecer mais sobre o método
         </MiniWideButton>

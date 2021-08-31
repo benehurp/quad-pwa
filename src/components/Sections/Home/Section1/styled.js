@@ -10,12 +10,12 @@ import {
 } from "../../styledSections"
 
 export const SectionWrapper = styled(SectionsWrapper)`
-  grid-column: 2/3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   .container {
-    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/3;
+    width: 75%;
   }
   .move-down-container {
     display: flex;
@@ -23,7 +23,7 @@ export const SectionWrapper = styled(SectionsWrapper)`
     align-items: center;
     position: absolute;
     left: 50%;
-    top: 100rem;
+    top: 88rem;
   }
   .move-down-icon {
     position: relative;
