@@ -23,7 +23,7 @@ export const SectionWrapper = styled(SectionsWrapper)`
     align-items: center;
     position: absolute;
     left: 50%;
-    top: 88rem;
+    top: 78rem;
   }
   .move-down-icon {
     position: relative;
