@@ -2,6 +2,7 @@ import React from "react"
 import * as S from "./styled"
 import MiniWideButton from "../../../Base/MiniWideButton"
 import Rotate3d from "../../../../images/rotate3d.png"
+import Cube3d from "../../../Base/Cube3d"
 
 const HomeSection3 = ({
   backgroundType,
@@ -18,7 +19,7 @@ const HomeSection3 = ({
   return (
     <S.SectionWrapper
       backgroundType="color"
-      backgroundColor="gray2"
+      backgroundColor="gray3"
       backgroundImage=""
       backgroundPosition=""
       gradientDeg=""
@@ -56,7 +57,9 @@ const HomeSection3 = ({
             Conhecer mais sobre o método
           </MiniWideButton>
         </div>
-        <div className="right">Box</div>
+        <div className="right">
+          <Cube3d />
+        </div>
       </div>
     </S.SectionWrapper>
   )
