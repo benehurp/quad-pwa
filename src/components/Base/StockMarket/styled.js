@@ -1,40 +1,41 @@
 import styled from "styled-components"
 
 export const StockMarketWrapper = styled.aside`
-  height: 6rem;
+  width: 100%;
   background-color: ${({ theme }) => theme.colors.gray2};
-  display: flex;
-  align-items: center;
   color: ${({ theme }) => theme.colors.white};
   font-size: ${({ theme }) => theme.font.size.xsmall};
   font-weight: ${({ theme }) => theme.font.weight.normal};
-  line-height: 2rem;
 `
 export const StockMarketList = styled.ul`
+  width: 100%;
+  line-height: 5rem;
   display: flex;
   position: relative;
   right: 0;
-  animation-name: moveLeftMarket;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 30s;
+  animation: moveLeftMarket 30s linear 0.1s infinite running;
   & li::before {
     content: "";
     border-left: 3px solid;
     padding: 0.3rem 0;
     margin: 0 1.5rem;
   }
-  .stock-market-price {
+
+  li {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .price {
     margin: 0 0.5rem;
   }
-  .stock-market-name {
-    font-weight: 700;
+  .name {
+    font-weight: ${({ theme }) => theme.font.weight.extrabold};
   }
   .arrow {
+    transform: translateY(0.2rem) translateX(0rem);
     width: 1.2rem;
     line-height: 2rem;
-    position: relative;
-    top: 4px;
   }
   .down {
     color: ${({ theme }) => theme.colors.red};
@@ -42,7 +43,7 @@ export const StockMarketList = styled.ul`
   .up {
     color: ${({ theme }) => theme.colors.green};
   }
-  .stock-market-pct {
+  .pct {
     margin: 0 0.5rem;
   }
   @keyframes moveLeftMarket {
