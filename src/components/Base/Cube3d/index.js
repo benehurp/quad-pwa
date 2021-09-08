@@ -1,27 +1,27 @@
-import React, { Suspense } from "react"
+import React, { useRef } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Html, OrbitControls } from "@react-three/drei"
 import * as S from "./styled"
 
 import Analytics from "../../../images/svg/cube-analytics.svg"
 import Search from "../../../images/svg/cube-search.svg"
+import Rotate from "../../../images/svg/cube-rotate.svg"
 
-function CuboDaQuad(props) {
-  const myMesh = React.useRef()
+function Box(props) {
+  const ref = useRef()
 
-  useFrame(({ clock }) => {
-    const now = clock.getElapsedTime()
-    myMesh.current.rotation.y = 150 + now / 5
+  useFrame(() => {
+    ref.current.rotation.y += 0.0005
   })
 
   return (
-    <mesh ref={myMesh} scale={12}>
+    <mesh position={[0, 0, 0]} ref={ref} scale={12}>
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={"#d40009"} />
+      <meshStandardMaterial color={"red"} />
       <Html
         distanceFactor={1}
         rotation={[0, -Math.PI / 2, 0]}
-        position={[-0.51, 0, 0]}
+        position={[-0.501, 0, 0]}
         transform
         occlude
       >
@@ -37,7 +37,7 @@ function CuboDaQuad(props) {
       <Html
         distanceFactor={1}
         rotation={[0, -Math.PI, 0]}
-        position={[0, 0, -0.51]}
+        position={[0, 0, -0.501]}
         transform
         occlude
       >
@@ -53,7 +53,7 @@ function CuboDaQuad(props) {
       <Html
         distanceFactor={1}
         rotation={[0, Math.PI / 2, 0]}
-        position={[0.51, 0, 0]}
+        position={[0.501, 0, 0]}
         transform
         occlude
       >
@@ -69,7 +69,7 @@ function CuboDaQuad(props) {
       <Html
         distanceFactor={1}
         rotation={[0, 0, 0]}
-        position={[0, 0, 0.51]}
+        position={[0, 0, 0.501]}
         transform
         occlude
       >
@@ -82,29 +82,38 @@ function CuboDaQuad(props) {
           </p>
         </S.CubeFace>
       </Html>
+      <Html
+        distanceFactor={1}
+        rotation={[Math.PI / 2, 0, 0]}
+        position={[0, 0.501, 0]}
+        transform
+        occlude
+      >
+        <S.CubeFace>
+          <S.ImgCubeHead src={Rotate} />
+        </S.CubeFace>
+      </Html>
     </mesh>
   )
 }
 
-const Cube3d = () => {
+export default function Cube3d() {
   return (
-    <>
-      <Canvas dpr={[1, 2]} camera={{ position: [-10, 20, -25], fov: 37 }}>
-        <Suspense fallback={null}>
-          <OrbitControls
-            enablePan={false}
-            enableZoom={false}
-            minPolarAngle={Math.PI / 3}
-            maxPolarAngle={Math.PI / 2}
-          />
-          <ambientLight intensity={0.2} />
-          <CuboDaQuad position={[0, 0, 0]} />
-          <spotLight position={[-45, 20, 5]} angle={0.3} penumbra={1} />
-          <pointLight position={[-10, -10, -10]} />
-        </Suspense>
-      </Canvas>
-    </>
+    <Canvas
+      orthographic
+      dpr={[1, 2]}
+      camera={{ zoom: 22, position: [-10, 20, -25], fov: 50 }}
+    >
+      <OrbitControls
+        enablePan={false}
+        enableZoom={false}
+        minPolarAngle={Math.PI / 3}
+        maxPolarAngle={Math.PI / 3}
+      />
+      <ambientLight intensity={0.3} />
+      <spotLight position={[-45, 20, 5]} angle={0.3} penumbra={1} />
+      <pointLight position={[-10, -10, -10]} />
+      <Box />
+    </Canvas>
   )
 }
-
-export default Cube3d
