@@ -1,21 +1,12 @@
 import styled from "styled-components"
 
-export const Cube = styled.div`
-  background: ${({ theme }) => theme.colors.red};
-  width: 100%;
-  height: 100%;
+export const CubeFace = styled.div`
+  width: 300px;
+  user-select: none;
 `
-export const Front = styled(Cube)`
-  background: ${({ theme }) => theme.colors.gray4};
-`
-export const Back = styled(Cube)`
-  background: ${({ theme }) => theme.colors.gray4};
-`
-export const Right = styled(Cube)``
-export const Left = styled(Cube)``
-export const Top = styled(Cube)`
-  background: ${({ theme }) => theme.colors.red2};
-`
-export const Bottom = styled(Cube)`
-  background: ${({ theme }) => theme.colors.red2};
+
+export const TitleH3 = styled.h3`
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
 `

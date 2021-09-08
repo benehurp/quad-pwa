@@ -1,56 +1,79 @@
-import React, { Suspense, useRef } from "react"
+import React, { Suspense } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Html, OrbitControls } from "@react-three/drei"
-
-// function CuboDaQuad() {
-//   const myMesh = React.useRef()
-
-//   useFrame(({ clock }) => {
-//     const now = clock.getElapsedTime()
-//     myMesh.current.rotation.y = now / 10
-//   })
-
-//   return (
-//     <mesh ref={myMesh}>
-//       <boxBufferGeometry attach="geometry" />
-//       <meshPhongMaterial attach="material" color="red" />
-//     </mesh>
-//   )
-// }
-
-// const Cube3d = () => {
-//   return (
-//     <Canvas camera={{ zoom: 115, position: [10, 45, 105] }}>
-//       <Flex size={[300, 300, 300]} flexDirection="row">
-//         <Box>
-//           <OrbitControls />
-//           <CuboDaQuad />
-//           <ambientLight intensity={0.3} />
-//           <spotLight position={[-45, 20, 5]} angle={0.3} penumbra={1} />
-//         </Box>
-//       </Flex>
-//     </Canvas>
-//   )
-// }
+import * as S from "./styled"
 
 function CuboDaQuad(props) {
   const myMesh = React.useRef()
 
   useFrame(({ clock }) => {
     const now = clock.getElapsedTime()
-    myMesh.current.rotation.y = 150 + now / -10
+    myMesh.current.rotation.y = 150 + now / 10
   })
 
   return (
     <mesh {...props} ref={myMesh} scale={12}>
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={"#d40009"} />
-      <Html distanceFactor={1.5} position={[0, 0, 0.51]} transform occlude>
-        <h1>Ação dos preços</h1>
-        <p>
-          Analisamos o mercado sobre a ótica inédita do Método M4D, uma
-          abordagem de investimentos.
-        </p>
+      <Html
+        distanceFactor={1}
+        rotation={[0, Math.PI / 2, 0]}
+        position={[0.51, 0, 0]}
+        transform
+        occlude
+      >
+        <S.CubeFace>
+          <S.TitleH3>Ação dos preços:</S.TitleH3>
+          <p>
+            Analisamos o mercado sobre a ótica inédita do Método M4D, uma
+            abordagem de investimentos.
+          </p>
+        </S.CubeFace>
+      </Html>
+      <Html
+        distanceFactor={1}
+        rotation={[0, -Math.PI / 2, 0]}
+        position={[-0.51, 0, 0]}
+        transform
+        occlude
+      >
+        <S.CubeFace>
+          <S.TitleH3>Ação dos preços:</S.TitleH3>
+          <p>
+            Analisamos o mercado sobre a ótica inédita do Método M4D, uma
+            abordagem de investimentos.
+          </p>
+        </S.CubeFace>
+      </Html>
+      <Html
+        distanceFactor={1}
+        rotation={[0, 0, 0]}
+        position={[0, 0, 0.51]}
+        transform
+        occlude
+      >
+        <S.CubeFace>
+          <S.TitleH3>Ação dos preços:</S.TitleH3>
+          <p>
+            Analisamos o mercado sobre a ótica inédita do Método M4D, uma
+            abordagem de investimentos.
+          </p>
+        </S.CubeFace>
+      </Html>
+      <Html
+        distanceFactor={1}
+        rotation={[0, -Math.PI, 0]}
+        position={[0, 0, -0.51]}
+        transform
+        occlude
+      >
+        <S.CubeFace>
+          <S.TitleH3>Ação dos preços:</S.TitleH3>
+          <p>
+            Analisamos o mercado sobre a ótica inédita do Método M4D, uma
+            abordagem de investimentos.
+          </p>
+        </S.CubeFace>
       </Html>
     </mesh>
   )
