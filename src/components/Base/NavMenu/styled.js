@@ -8,7 +8,7 @@ export const MenuItems = styled.ul`
   display: flex;
   font-size: ${({ theme }) => theme.font.size.xsmall};
   text-transform: uppercase;
-  gap: 2.5rem;
+  gap: 2rem;
 `
 export const Items = styled.li`
   color: ${({ theme }) => theme.colors.white};
