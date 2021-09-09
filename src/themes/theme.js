@@ -2,7 +2,7 @@ export default {
   colors: {
     red: "#f32530",
     red2: "#9e2836",
-    white: "#FFFFFF",
+    white: "#f2f2f2",
     gray: "#172331",
     gray2: "#071321",
     gray3: "#060e19",
@@ -13,7 +13,7 @@ export default {
     green: "#2fa700",
   },
   breakingPoints: {
-    desktop: "1fr minmax(320px, 1024px) 1fr",
+    normal: "1fr minmax(320px, 1024px) 1fr",
   },
   font: {
     family: "'Montserrat', sans-serif",
