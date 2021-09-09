@@ -33,7 +33,10 @@ export const ButtonRoundStyledLink = styled(Link)`
   border-radius: ${props => (props.borderRadius ? props.borderRadius : "2rem")};
   margin-top: ${props => (props.marginTop ? props.marginTop : "none")};
   box-sizing: border-box;
-  padding: ${props => (props.padding ? props.padding : "0.3rem")};
+  padding-top: ${props => (props.padding ? props.padding : "0.3rem")};
+  padding-bottom: ${props => (props.padding ? props.padding : "0.3rem")};
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   letter-spacing: 0.7px;
   text-align: center;
   display: inline-flex;
