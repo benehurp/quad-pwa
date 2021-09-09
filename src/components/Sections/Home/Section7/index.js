@@ -45,17 +45,15 @@ const HomeSection7 = () => {
               textTransform="uppercase"
               textAlign="center"
             >
-              Fundador / Chefe de Análise
+              Head de Criptos
             </S.Paragraph>
             <hr />
             <S.Paragraph fontSize="xsmall" textAlign="center">
-              Lorem ipsum posuere fermentum sit iaculis pellentesque fermentum
-              faucibus lacus aliquam rhoncus luctus, erat egestas blandit
-              vulputate conubia orci imperdiet interdum quisque pretium
-              consequat platea, gravida torquent lobortis augue a pretium nisi
-              nostra curae tincidunt eu. phasellus aptent nulla et diam
-              adipiscing himenaeos quisque, gravida laoreet etiam fames integer
-              praesent curae.
+              Formado pela USP em Ciências da Computação e investidor desde
+              2008, Lauro desenvolveu um modelo de análise
+              fundamentalista/behaviorista suportada por indicadores onchain de
+              criptoativos. Além das criptomoedas tradicionais, Lauro também é
+              profundo conhecedor do mercado de NFTs e de BlockChain Games.
             </S.Paragraph>
 
             <div className="stamp">
