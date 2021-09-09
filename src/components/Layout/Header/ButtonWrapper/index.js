@@ -10,7 +10,7 @@ const ButtonsWrapper = () => {
       <MiniWideButton
         link="https://t.me/canaldaquad"
         color={"blue"}
-        width={"15rem"}
+        width={"100%"}
         height={"2.5rem"}
         gradientColor1={"white"}
         gradientColor2={"white"}
@@ -24,7 +24,8 @@ const ButtonsWrapper = () => {
       </MiniWideButton>
       <MiniWideButton
         link="https://membros.quadfinancial.com.br/"
-        width={"10rem"}
+        width={"100%"}
+        height={"2.5rem"}
       >
         Login <img src={SigIn} alt="Acesse a Área de Membros" height="18rem" />
       </MiniWideButton>
