@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const FooterItemsWrapper = styled.div`
-  grid-template-columns: ${({ theme }) => theme.breakingPoints.desktop};
+  grid-template-columns: ${({ theme }) => theme.breakingPoints.normal};
   display: grid;
   background-color: ${({ theme }) => theme.colors.gray};
 `
