@@ -9,7 +9,7 @@ export const SectionsWrapper = styled.section`
     border: 0px;
   }
 
-  grid-template-columns: ${({ theme }) => theme.breakingPoints.desktop};
+  grid-template-columns: ${({ theme }) => theme.breakingPoints.normal};
   display: grid;
   align-items: center;
   ${props =>
