@@ -5,7 +5,7 @@ export const CubeFace = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   user-select: none;
 `
 
@@ -19,9 +19,12 @@ export const TitleH3 = styled.h3`
 export const ImgCube = styled.img`
   width: 30%;
 `
-export const ImgCubeHead = styled(ImgCube)`
+export const ImgCubeHead = styled.img`
   width: 35%;
   height: 35%;
   transform: scaleX(-1);
   opacity: 0.15;
+`
+export const CubeFaceTop = styled(CubeFace)`
+  align-items: center;
 `

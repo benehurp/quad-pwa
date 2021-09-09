@@ -59,10 +59,10 @@ function Box(props) {
       >
         <S.CubeFace>
           <S.ImgCube src={Search} />
-          <S.TitleH3>Outra face:</S.TitleH3>
+          <S.TitleH3>Indicadores econômicos:</S.TitleH3>
           <p>
-            com alcance no curto prazo, esta dimensão fornece o timing para a
-            entrada, saída e balanceamento das posições.
+            eles são o alicerce da tendência primária do mercado e indicam se o
+            bull ou bear market é sustentável no médio prazo.
           </p>
         </S.CubeFace>
       </Html>
@@ -75,10 +75,11 @@ function Box(props) {
       >
         <S.CubeFace>
           <S.ImgCube src={Analytics} />
-          <S.TitleH3>Outra face ainda:</S.TitleH3>
+          <S.TitleH3>Sentimento:</S.TitleH3>
           <p>
-            com alcance no curto prazo, esta dimensão fornece o timing para a
-            entrada, saída e balanceamento das posições.
+            esta dimensão mensura a propensão ao risco dos investidores. Euforia
+            ou pessimismo extremos tendem a coincidir com a inflexão da
+            tendência.
           </p>
         </S.CubeFace>
       </Html>
@@ -89,9 +90,9 @@ function Box(props) {
         transform
         occlude
       >
-        <S.CubeFace>
+        <S.CubeFaceTop>
           <S.ImgCubeHead src={Rotate} />
-        </S.CubeFace>
+        </S.CubeFaceTop>
       </Html>
     </mesh>
   )
