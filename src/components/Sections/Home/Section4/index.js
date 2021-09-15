@@ -1,8 +1,7 @@
 import React from "react"
 import * as S from "./styled"
+import Testimonials from "../../../Base/Testimonials"
 import Quotes from "../../../../images/svg/quotes.svg"
-import MiniWideButton from "../../../Base/MiniWideButton"
-import Avatar from "../../../../images/demo.jpg"
 
 const HomeSection4 = ({
   backgroundType,
@@ -34,64 +33,11 @@ const HomeSection4 = ({
           Palavras de quem <br />
           <span>investe com inteligência</span>
         </S.TitleH3>
-
         <div className="quotes">
           <img src={Quotes} alt="Símbolo de aspas duplas" className="left" />
           <img src={Quotes} alt="Símbolo de aspas duplas" className="right" />
         </div>
-        <ul>
-          <S.Card as="li">
-            <div className="avatar-container">
-              <img className="avatar" src={Avatar} alt="Avatar do perfil" />
-            </div>
-            <S.TitleH5 textAlign="center">Fernando</S.TitleH5>
-            <div className="testimonial">
-              <S.Paragraph fontSize="xxsmall">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Perferendis, sit. Similique modi necessitatibus facere quam
-                quidem neque pariatur. Pariatur ipsum voluptatum beatae voluptas
-                laborum rerum ratione est architecto facere odio. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit. Pariatur ipsum
-                voluptatum beatae voluptas laborum rerum ratione est architecto
-                facere odio. Pariatur ipsum voluptatum beatae voluptas laborum
-                rerum ratione est architecto facere odio.
-              </S.Paragraph>
-            </div>
-            <div className="btn-right">
-              <MiniWideButton
-                padding="0.6rem"
-                gradientColor1="red"
-                gradientColor2="red"
-              >
-                Saiba mais
-              </MiniWideButton>
-            </div>
-          </S.Card>
-          <S.Card as="li">
-            <div className="avatar-container">
-              <img className="avatar" src={Avatar} alt="Avatar do perfil" />
-            </div>
-            <S.TitleH5 textAlign="center">Fernando</S.TitleH5>
-            <div className="testimonial">
-              <S.Paragraph fontSize="xxsmall">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Perferendis, sit. Similique modi necessitatibus facere quam
-                quidem neque pariatur. Pariatur ipsum voluptatum beatae voluptas
-                laborum rerum ratione est architecto facere odio. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit.
-              </S.Paragraph>
-            </div>
-            <div className="btn-right">
-              <MiniWideButton
-                padding="0.6rem"
-                gradientColor1="red"
-                gradientColor2="red"
-              >
-                Saiba mais
-              </MiniWideButton>
-            </div>
-          </S.Card>
-        </ul>
+        <Testimonials />
       </div>
     </S.SectionWrapper>
   )
