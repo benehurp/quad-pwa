@@ -8,34 +8,34 @@ export const StockMarket = () => {
     <S.StockMarketWrapper>
       <S.StockMarketList>
         <li>
-          <span class="name">DOWN JONES</span>
-          <span class="price">R$ 27,51</span>
-          <img src={ArrowUp} alt="Ativo em alta" class="arrow" />
-          <span class="pct up">+0,45%</span>
+          <span className="name">DOWN JONES</span>
+          <span className="price">R$ 27,51</span>
+          <img src={ArrowUp} alt="Ativo em alta" className="arrow" />
+          <span className="pct up">+0,45%</span>
         </li>
         <li>
-          <span class="name">DOWN JONES</span>
-          <span class="price">R$ 27,51</span>
-          <img src={ArrowDown} alt="Ativo em baixa" class="arrow" />
-          <span class="pct down">-0,45%</span>
+          <span className="name">DOWN JONES</span>
+          <span className="price">R$ 27,51</span>
+          <img src={ArrowDown} alt="Ativo em baixa" className="arrow" />
+          <span className="pct down">-0,45%</span>
         </li>
         <li>
-          <span class="name">DOWN JONES</span>
-          <span class="price">R$ 27,51</span>
-          <img src={ArrowUp} alt="Ativo em alta" class="arrow" />
-          <span class="pct up">-0,45%</span>
+          <span className="name">DOWN JONES</span>
+          <span className="price">R$ 27,51</span>
+          <img src={ArrowUp} alt="Ativo em alta" className="arrow" />
+          <span className="pct up">-0,45%</span>
         </li>
         <li>
-          <span class="name">DOWN JONES</span>
-          <span class="price">R$ 27,51</span>
-          <img src={ArrowDown} alt="Ativo em baixa" class="arrow" />
-          <span class="pct down">+0,45%</span>
+          <span className="name">DOWN JONES</span>
+          <span className="price">R$ 27,51</span>
+          <img src={ArrowDown} alt="Ativo em baixa" className="arrow" />
+          <span className="pct down">+0,45%</span>
         </li>
         <li>
-          <span class="name">DOWN JONES</span>
-          <span class="price">R$ 27,51</span>
-          <img src={ArrowUp} alt="Ativo em alta" class="arrow" />
-          <span class="pct up">-0,45%</span>
+          <span className="name">DOWN JONES</span>
+          <span className="price">R$ 27,51</span>
+          <img src={ArrowUp} alt="Ativo em alta" className="arrow" />
+          <span className="pct up">-0,45%</span>
         </li>
       </S.StockMarketList>
     </S.StockMarketWrapper>
