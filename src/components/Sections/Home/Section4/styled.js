@@ -39,6 +39,7 @@ export const SectionWrapper = styled(SectionsWrapper)`
     height: 9rem;
     border-radius: 50%;
     position: absolute;
+    z-index: 100;
   }
   & .left {
     width: 8rem;
@@ -47,11 +48,16 @@ export const SectionWrapper = styled(SectionsWrapper)`
   & .right {
     width: 8rem;
   }
-  ul {
+  .swiper {
     margin-top: 9rem;
-    display: flex;
-    gap: 3rem;
-    z-index: 1;
+    width: 100%;
+    height: 40vh;
+    overflow: visible;
+    margin-left: unset;
+    margin-right: unset;
+    padding: 0 10rem;
+  }
+  .swiper-slide {
   }
   .btn-right {
     width: 100%;
@@ -81,6 +87,7 @@ export const TitleH6 = styled(SectionsH6)``
 export const Paragraph = styled(SectionsP)``
 
 export const Card = styled(CardGradientBase)`
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
