@@ -13,15 +13,16 @@ const TelegramFooter = () => {
       </div>
       <MiniWideButton
         link="https://t.me/canaldaquad"
-        color={"blue"}
-        width={"30rem"}
-        height={"3rem"}
-        gradientColor1={"white"}
-        gradientColor2={"white"}
-        gradientPercent1={"0%"}
-        gradientPercent2={"100%"}
-        gradientDeg={"90deg"}
-        borderRadius={"0.7rem"}
+        $color={"blue"}
+        $width={"30rem"}
+        $height={"3rem"}
+        $padding={"0"}
+        $gradientColor1={"white"}
+        $gradientColor2={"white"}
+        $gradientPercent1={"0%"}
+        $gradientPercent2={"100%"}
+        $gradientDeg={"90deg"}
+        $borderRadius={"0.7rem"}
       >
         <img
           src={TelegramIcon}

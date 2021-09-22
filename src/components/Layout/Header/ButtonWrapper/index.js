@@ -9,23 +9,23 @@ const ButtonsWrapper = () => {
     <S.ButtonWrapperStyled>
       <MiniWideButton
         link="https://t.me/canaldaquad"
-        color={"blue"}
-        width={"100%"}
-        height={"2.5rem"}
-        gradientColor1={"white"}
-        gradientColor2={"white"}
-        gradientPercent1={"0%"}
-        gradientPercent2={"100%"}
-        gradientDeg={"90deg"}
-        borderRadius={"2rem"}
+        $color={"blue"}
+        $width={"100%"}
+        $height={"2.5rem"}
+        $gradientColor1={"white"}
+        $gradientColor2={"white"}
+        $gradientPercent1={"0%"}
+        $gradientPercent2={"100%"}
+        $gradientDeg={"90deg"}
+        $borderRadius={"2rem"}
       >
         <img src={TelegramIcon} alt="Acesse o nosso Telegram" height="18rem" />
         Telegram
       </MiniWideButton>
       <MiniWideButton
         link="https://membros.quadfinancial.com.br/"
-        width={"100%"}
-        height={"2.5rem"}
+        $width={"100%"}
+        $height={"2.5rem"}
       >
         Login <img src={SigIn} alt="Acesse a Área de Membros" height="18rem" />
       </MiniWideButton>

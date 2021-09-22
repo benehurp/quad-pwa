@@ -46,13 +46,13 @@ const HomeSection3 = ({
             sinais e filtrar os ruídos nos mercados globais.
           </S.Paragraph>
           <MiniWideButton
-            link="/"
-            width="85%"
-            height="5rem"
-            padding="1.2rem"
-            borderRadius=".8rem"
-            fontSize="medium"
-            marginTop="2rem"
+            link="#"
+            $width="85%"
+            $height="5rem"
+            $padding="1.2rem"
+            $borderRadius=".8rem"
+            $fontSize="medium"
+            $marginTop="2rem"
           >
             Conhecer mais sobre o método
           </MiniWideButton>

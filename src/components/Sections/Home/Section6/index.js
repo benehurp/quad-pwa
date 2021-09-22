@@ -66,13 +66,13 @@ const HomeSection6 = ({
             melhores. E isso é exatamente o que oferecemos.
           </S.Paragraph>
           <MiniWideButton
-            link="/"
-            width="100%"
-            height="5rem"
-            padding="1.2rem"
-            borderRadius=".8rem"
-            fontSize="medium"
-            marginTop="2rem"
+            link="#"
+            $width="100%"
+            $height="5rem"
+            $padding="1.2rem"
+            $borderRadius=".8rem"
+            $fontSize="medium"
+            $marginTop="2rem"
           >
             CONHECER AS ASSINATURAS
           </MiniWideButton>

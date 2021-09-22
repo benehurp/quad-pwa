@@ -137,15 +137,15 @@ const HomeSection7 = () => {
           </S.Card>
         </ul>
         <MiniWideButton
-          link="/"
-          width="100%"
-          height="5rem"
-          padding="1.2rem"
-          borderRadius=".8rem"
-          fontSize="medium"
-          marginTop="2rem"
-          gradientDeg="-160deg"
-          gradientPercent1="-10%"
+          link="#"
+          $width="100%"
+          $height="5rem"
+          $padding="1.2rem"
+          $borderRadius=".8rem"
+          $fontSize="medium"
+          $marginTop="2rem"
+          $gradientDeg="-160deg"
+          $gradientPercent1="-10%"
         >
           Conhecer mais sobre o método
         </MiniWideButton>
