@@ -28,12 +28,12 @@ const HomeSection5 = ({
       height=""
     >
       <div className="container">
-        <S.TitleH4>
+        <S.TitleH3>
           <span>Tudo que você precisa saber</span>
           <br />
           sobre nossa empresa e método
           <br /> de investimentos
-        </S.TitleH4>
+        </S.TitleH3>
         <ul>
           <S.Card
             as="li"

@@ -49,7 +49,6 @@ const HomeSection3 = ({
             link="#"
             $width="85%"
             $height="5rem"
-            $padding="1.2rem"
             $borderRadius=".8rem"
             $fontSize="medium"
             $marginTop="2rem"

@@ -151,8 +151,7 @@ const HomeSection4 = () => {
                 </div>
                 <div className="btn-right">
                   <MiniWideButton
-                    $padding="0.6rem"
-                    $width="12rem"
+                    $width="10rem"
                     $gradientColor1="red"
                     $gradientColor2="red"
                   >

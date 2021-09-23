@@ -30,11 +30,10 @@ const HomeSection6 = ({
     >
       <div className="container">
         <div className="left">
-          <S.TitleH3>
-            Atravesse
-            <br /> os ciclos <br />
-            guiado pelo <span>Método M4D</span>
-          </S.TitleH3>
+          <S.TitleH2>
+            Atravesse <br />
+            os ciclos guiado pelo <span>Método M4D</span>
+          </S.TitleH2>
           <S.Paragraph width="85%">
             Ao longo dos últimos 45 anos, Jarbas Gambogi estudou até se tornar
             especialista no mercado de capitais. Finalmente, por volta dos anos
@@ -69,7 +68,6 @@ const HomeSection6 = ({
             link="#"
             $width="100%"
             $height="5rem"
-            $padding="1.2rem"
             $borderRadius=".8rem"
             $fontSize="medium"
             $marginTop="2rem"

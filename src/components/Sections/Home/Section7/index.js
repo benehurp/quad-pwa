@@ -21,10 +21,10 @@ const HomeSection7 = () => {
       height=""
     >
       <div className="container">
-        <S.TitleH4>
+        <S.TitleH3>
           Conheça as mentes por trás
           <br /> dos racionais de exposição
-        </S.TitleH4>
+        </S.TitleH3>
         <ul>
           <S.Card
             as="li"
@@ -140,7 +140,6 @@ const HomeSection7 = () => {
           link="#"
           $width="100%"
           $height="5rem"
-          $padding="1.2rem"
           $borderRadius=".8rem"
           $fontSize="medium"
           $marginTop="2rem"
