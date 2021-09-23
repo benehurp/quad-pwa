@@ -134,7 +134,7 @@ const HomeSection4 = () => {
           pagination={{ clickable: true }}
         >
           {data.map(people => (
-            <SwiperSlide>
+            <SwiperSlide key={people.id}>
               <S.Card>
                 <div className="avatar-container">
                   <img
