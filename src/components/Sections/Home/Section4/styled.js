@@ -27,6 +27,7 @@ export const SectionWrapper = styled(SectionsWrapper)`
     position: absolute;
     width: 108%;
     top: 12rem;
+    z-index: 0;
   }
   .avatar-container {
     position: relative;
@@ -49,15 +50,19 @@ export const SectionWrapper = styled(SectionsWrapper)`
     width: 8rem;
   }
   .swiper {
-    margin-top: 9rem;
     width: 100%;
     height: 40vh;
-    overflow: visible;
-    margin-left: unset;
-    margin-right: unset;
-    padding: 0 10rem;
+    overflow: hidden;
+    padding: 10rem 5rem 0;
+    margin: 0;
   }
-  .swiper-slide {
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    color: white;
+    font-size: 30px;
+  }
+  .swiper-pagination-bullet {
+    background: red;
   }
   .btn-right {
     width: 100%;

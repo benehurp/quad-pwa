@@ -128,7 +128,7 @@ const HomeSection4 = () => {
         </div>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={50}
+          spaceBetween={55}
           slidesPerView={2}
           navigation
           pagination={{ clickable: true }}
@@ -154,6 +154,7 @@ const HomeSection4 = () => {
                     $width="10rem"
                     $gradientColor1="red"
                     $gradientColor2="red"
+                    $paddingRight="0"
                   >
                     Saiba mais
                   </MiniWideButton>
