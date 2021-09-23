@@ -12,6 +12,7 @@ const ButtonsWrapper = () => {
         $color={"blue"}
         $width={"100%"}
         $height={"2.5rem"}
+        $paddingRight={"2rem"}
         $gradientColor1={"white"}
         $gradientColor2={"white"}
         $gradientPercent1={"0%"}
@@ -26,6 +27,7 @@ const ButtonsWrapper = () => {
         link="https://membros.quadfinancial.com.br/"
         $width={"100%"}
         $height={"2.5rem"}
+        $paddingRight={"2rem"}
       >
         Login <img src={SigIn} alt="Acesse a Área de Membros" height="18rem" />
       </MiniWideButton>
