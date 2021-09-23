@@ -3,18 +3,7 @@ import * as S from "./styled"
 import BigLogoQuad from "../../../../images/svg/logo-Q.svg"
 import ImageSection from "../../../../images/home-section2.jpg"
 
-const HomeSection2 = ({
-  backgroundType,
-  backgroundColor,
-  backgroundImage,
-  backgroundPosition,
-  gradientDeg,
-  gradientColor1,
-  gradientColor2,
-  gradientPercent1,
-  gradientPercent2,
-  height,
-}) => {
+const HomeSection2 = () => {
   return (
     <S.SectionWrapper
       backgroundType="image"

@@ -4,18 +4,7 @@ import MiniWideButton from "../../../Base/MiniWideButton"
 import Rotate3d from "../../../../images/rotate3d.png"
 import Cube3d from "../../../Base/Cube3d"
 
-const HomeSection3 = ({
-  backgroundType,
-  backgroundColor,
-  backgroundImage,
-  backgroundPosition,
-  gradientDeg,
-  gradientColor1,
-  gradientColor2,
-  gradientPercent1,
-  gradientPercent2,
-  height,
-}) => {
+const HomeSection3 = () => {
   return (
     <S.SectionWrapper
       backgroundType="color"

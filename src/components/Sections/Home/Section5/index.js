@@ -2,18 +2,7 @@ import React from "react"
 import * as S from "./styled"
 import ImageSection from "../../../../images/home-section5.jpg"
 
-const HomeSection5 = ({
-  backgroundType,
-  backgroundColor,
-  backgroundImage,
-  backgroundPosition,
-  gradientDeg,
-  gradientColor1,
-  gradientColor2,
-  gradientPercent1,
-  gradientPercent2,
-  height,
-}) => {
+const HomeSection5 = () => {
   return (
     <S.SectionWrapper
       backgroundType="image"

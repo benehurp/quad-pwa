@@ -3,18 +3,7 @@ import * as S from "./styled"
 import ImageSection from "../../../../images/home-section6.jpg"
 import MiniWideButton from "../../../Base/MiniWideButton"
 
-const HomeSection6 = ({
-  backgroundType,
-  backgroundColor,
-  backgroundImage,
-  backgroundPosition,
-  gradientDeg,
-  gradientColor1,
-  gradientColor2,
-  gradientPercent1,
-  gradientPercent2,
-  height,
-}) => {
+const HomeSection6 = () => {
   return (
     <S.SectionWrapper
       backgroundType="image"

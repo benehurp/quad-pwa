@@ -3,18 +3,7 @@ import * as S from "./styled"
 import ArrowMark from "../../../../images/svg/arrow-mark.svg"
 import ImageSection from "../../../../images/home-section1.jpg"
 
-const HomeSection1 = ({
-  backgroundType,
-  backgroundColor,
-  backgroundImage,
-  backgroundPosition,
-  gradientDeg,
-  gradientColor1,
-  gradientColor2,
-  gradientPercent1,
-  gradientPercent2,
-  height,
-}) => {
+const HomeSection1 = () => {
   return (
     <S.SectionWrapper
       backgroundType="image"
