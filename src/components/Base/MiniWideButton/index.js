@@ -10,7 +10,7 @@ const MiniWideButton = ({
   $width,
   $height,
   $paddingTop,
-  $paddingRigth,
+  $paddingRight,
   $marginTop,
   $gradientDeg,
   $gradientColor1,
@@ -28,7 +28,7 @@ const MiniWideButton = ({
       $width={$width}
       $height={$height}
       $paddingTop={$paddingTop}
-      $paddingRigth={$paddingRigth}
+      $paddingRight={$paddingRight}
       $marginTop={$marginTop}
       $gradientDeg={$gradientDeg}
       $gradientColor1={$gradientColor1}
