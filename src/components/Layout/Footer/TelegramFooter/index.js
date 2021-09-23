@@ -14,9 +14,9 @@ const TelegramFooter = () => {
       <MiniWideButton
         link="https://t.me/canaldaquad"
         $color={"blue"}
-        $width={"30rem"}
+        $width={"32rem"}
+        $paddingRight={"0rem"}
         $height={"3rem"}
-        $padding={"0"}
         $gradientColor1={"white"}
         $gradientColor2={"white"}
         $gradientPercent1={"0%"}
