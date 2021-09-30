@@ -51,9 +51,8 @@ export const SectionWrapper = styled(SectionsWrapper)`
   }
   .swiper {
     width: 100%;
-    height: 40vh;
     overflow: hidden;
-    padding: 10rem 5rem 0;
+    padding: 10rem 5rem 5rem;
     margin: 0;
   }
   .swiper-button-prev:after,
