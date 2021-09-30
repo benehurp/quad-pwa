@@ -20,7 +20,7 @@ const HomeSection4 = () => {
     },
     {
       id: 2,
-      name: "Jorge Henrique Silva de Melo",
+      name: "Jorge de Melo",
       description:
         "Depois da Quad consegui enxergar a importância de proteger meu capital. Muito mais que retornos explosivos, a calma, paciência, tranquilidade me levou para outro patamar. Para além de qualquer análise de ativos, busca de rentabilidades, o foco em gerenciar o risco é um diferencial sem tamanho. Análises profundas sobre o macro, stockpicking certeiro, entradas e zeragens das posições simplesmente antológicas. Para o investidor que quer mesmo ter rentabilidades consistentes no médio/longo prazo é simplesmente um must have. Obrigado por tudo!",
     },
@@ -98,12 +98,6 @@ const HomeSection4 = () => {
     },
   ]
 
-  // const [current, setCurrent] = React.useState(quotes[0])
-
-  // const [active, setActive] = React.useState(0)
-
-  // console.log(current)
-
   return (
     <S.SectionWrapper
       backgroundType="gradient"
@@ -146,7 +140,7 @@ const HomeSection4 = () => {
                 <S.TitleH5 textAlign="center">{people.name}</S.TitleH5>
                 <div className="testimonial">
                   <S.Paragraph fontSize="xxsmall">
-                    {people.description}
+                    {people.description.slice(0, 360)}...
                   </S.Paragraph>
                 </div>
                 <div className="btn-right">
