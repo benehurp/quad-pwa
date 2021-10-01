@@ -8,37 +8,32 @@ import SocialLinks from "../../Base/SocialLinks"
 import { Mail } from "@styled-icons/heroicons-outline/Mail"
 import { PhoneCall } from "@styled-icons/evaicons-solid/PhoneCall"
 import TelegramFooter from "./TelegramFooter"
+import { UserContext } from "../../../UserContext"
 
 const Footer = () => {
+  const { useWindowSize } = React.useContext(UserContext)
+
+  const [width] = useWindowSize()
+
   return (
     <>
       <TelegramFooter />
-      <footer>
-        <S.FooterItemsWrapper>
-          <S.FooterItems>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "flex-start",
-                flexDirection: "column",
-                gap: "1.5rem 0",
-                fontSize: "1rem",
-                textTransform: "uppercase",
-                fontWeight: "600",
-              }}
-            >
-              <Logo heigth="65px" alt="Logo do Rodapé: Quad Financial" />
-              <S.SocialLinksWrapper>
-                <SocialLinks />
-                <S.SocialLinksDescription>
-                  Acompanhe nas
-                  <br />
-                  redes sociais
-                </S.SocialLinksDescription>
-              </S.SocialLinksWrapper>
-            </div>
+      <S.FooterWrapper>
+        <S.FooterItems>
+          <S.FooterLeft>
+            <Logo heigth="65px" alt="Logo do Rodapé: Quad Financial" />
+            <S.SocialLinksWrapper>
+              <SocialLinks />
+              <S.SocialLinksDescription>
+                Acompanhe nas
+                <br />
+                redes sociais
+              </S.SocialLinksDescription>
+            </S.SocialLinksWrapper>
+          </S.FooterLeft>
+          <S.FooterCenter>
             <div>
-              <address
+              <S.AddressItem
                 style={{
                   display: "flex",
                   gap: "2rem",
@@ -55,13 +50,13 @@ const Footer = () => {
                   <PhoneCall width="1.8rem" />
                   contato@quadfinancial.com.br
                 </FooterContacts>
-              </address>
-              <NavMenu />
+              </S.AddressItem>
+              {width > 768 ? <NavMenu /> : " "}
             </div>
-          </S.FooterItems>
-        </S.FooterItemsWrapper>
-        <FooterCopyRight />
-      </footer>
+          </S.FooterCenter>
+        </S.FooterItems>
+      </S.FooterWrapper>
+      <FooterCopyRight />
     </>
   )
 }

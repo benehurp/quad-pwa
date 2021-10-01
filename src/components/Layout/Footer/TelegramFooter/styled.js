@@ -12,4 +12,10 @@ export const TelegramWrapper = styled.div`
   font-weight: ${({ theme }) => theme.font.weight.semibold};
   text-align: right;
   letter-spacing: 1px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    flex-direction: column-reverse;
+    height: 18rem;
+  }
 `
