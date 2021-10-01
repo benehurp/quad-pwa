@@ -5,6 +5,10 @@ export const HeaderWrapperStyled = styled.header`
   display: grid;
   background-color: ${({ theme }) => theme.colors.gray};
   padding: 0 5rem;
+
+  @media screen and (max-width: 376px) {
+    padding: 0 2rem;
+  }
 `
 export const HeaderContainerItemsStyled = styled.div`
   grid-column: 2/3;

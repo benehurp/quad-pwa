@@ -15,7 +15,11 @@ const Header = () => {
       <S.HeaderContainerItemsStyled>
         <Logo heigth="70px" alt="Logo do Header: Quad Financial" />
         {width >= 1024 ? <NavMenu /> : ""}
-        {width >= 600 ? <ButtonsWrapper /> : ""}
+        {width > 768 ? (
+          <ButtonsWrapper oneButton={false} />
+        ) : (
+          <ButtonsWrapper oneButton={true} />
+        )}
       </S.HeaderContainerItemsStyled>
     </S.HeaderWrapperStyled>
   )
