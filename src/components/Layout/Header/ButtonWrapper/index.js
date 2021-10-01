@@ -10,20 +10,22 @@ const ButtonsWrapper = ({ oneButton }) => {
       {oneButton
         ? [
             <MiniWideButton
+              key="0"
               link="https://membros.quadfinancial.com.br/"
-              $width={"100%"}
+              $width={"12rem"}
               $height={"2.5rem"}
               $paddingRight={"2rem"}
             >
-              Login{" "}
+              Membros
               <img src={SigIn} alt="Acesse a Área de Membros" height="18rem" />
             </MiniWideButton>,
           ]
         : [
             <MiniWideButton
+              key="1"
               link="https://t.me/canaldaquad"
               $color={"blue"}
-              $width={"100%"}
+              $width={"12rem"}
               $height={"2.5rem"}
               $paddingRight={"2rem"}
               $gradientColor1={"white"}
@@ -41,12 +43,13 @@ const ButtonsWrapper = ({ oneButton }) => {
               Telegram
             </MiniWideButton>,
             <MiniWideButton
+              key="2"
               link="https://membros.quadfinancial.com.br/"
-              $width={"100%"}
+              $width={"12rem"}
               $height={"2.5rem"}
               $paddingRight={"2rem"}
             >
-              Login{" "}
+              Membros
               <img src={SigIn} alt="Acesse a Área de Membros" height="18rem" />
             </MiniWideButton>,
           ]}

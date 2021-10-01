@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const HeaderWrapperStyled = styled.header`
+export const HeaderWrapper = styled.header`
   grid-template-columns: ${({ theme }) => theme.breakingPoints.normal};
   display: grid;
   background-color: ${({ theme }) => theme.colors.gray};
@@ -10,7 +10,7 @@ export const HeaderWrapperStyled = styled.header`
     padding: 0 2rem;
   }
 `
-export const HeaderContainerItemsStyled = styled.div`
+export const HeaderItems = styled.div`
   grid-column: 2/3;
   display: flex;
   align-items: center;

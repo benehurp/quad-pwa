@@ -11,17 +11,19 @@ const Header = () => {
   const [width] = useWindowSize()
 
   return (
-    <S.HeaderWrapperStyled>
-      <S.HeaderContainerItemsStyled>
+    <S.HeaderWrapper>
+      <S.HeaderItems>
         <Logo heigth="70px" alt="Logo do Header: Quad Financial" />
         {width >= 1024 ? <NavMenu /> : ""}
         {width > 768 ? (
           <ButtonsWrapper oneButton={false} />
-        ) : (
+        ) : width > 375 ? (
           <ButtonsWrapper oneButton={true} />
+        ) : (
+          "Menu"
         )}
-      </S.HeaderContainerItemsStyled>
-    </S.HeaderWrapperStyled>
+      </S.HeaderItems>
+    </S.HeaderWrapper>
   )
 }
 
