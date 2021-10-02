@@ -19,7 +19,7 @@ export const FooterItems = styled.div`
 export const FooterLeft = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.5rem 0;
+  gap: 2rem 0;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -36,6 +36,7 @@ export const FooterLeft = styled.div`
 
 export const FooterCenter = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0 5rem;
@@ -51,7 +52,7 @@ export const FooterCenter = styled.div`
 export const SocialLinksWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 `
 
 export const SocialLinksDescription = styled.div`
@@ -61,4 +62,14 @@ export const SocialLinksDescription = styled.div`
 export const AddressItem = styled.address`
   display: flex;
   justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+  }
 `

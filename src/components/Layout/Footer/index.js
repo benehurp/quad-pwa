@@ -32,27 +32,17 @@ const Footer = () => {
             </S.SocialLinksWrapper>
           </S.FooterLeft>
           <S.FooterCenter>
-            <div>
-              <S.AddressItem
-                style={{
-                  display: "flex",
-                  gap: "2rem",
-                  marginBottom: "3rem",
-                  fontSize: "1.2rem",
-                  fontWeight: "600",
-                }}
-              >
-                <FooterContacts>
-                  <Mail width="2rem" />
-                  11 99621-3970
-                </FooterContacts>
-                <FooterContacts>
-                  <PhoneCall width="1.8rem" />
-                  contato@quadfinancial.com.br
-                </FooterContacts>
-              </S.AddressItem>
-              {width > 768 ? <NavMenu /> : " "}
-            </div>
+            <S.AddressItem>
+              <FooterContacts>
+                <Mail width="2rem" />
+                11 99621-3970
+              </FooterContacts>
+              <FooterContacts>
+                <PhoneCall width="1.8rem" />
+                contato@quadfinancial.com.br
+              </FooterContacts>
+            </S.AddressItem>
+            {width > 768 ? <NavMenu /> : " "}
           </S.FooterCenter>
         </S.FooterItems>
       </S.FooterWrapper>
