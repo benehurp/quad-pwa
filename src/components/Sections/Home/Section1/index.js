@@ -34,6 +34,7 @@ const HomeSection1 = () => {
       <div className="button-wrapper">
         {width <= 600 ? (
           <MiniWideButton
+            link="#"
             $width="30rem"
             $height="5rem"
             $borderRadius="0.8rem"
@@ -43,6 +44,7 @@ const HomeSection1 = () => {
           </MiniWideButton>
         ) : (
           <MiniWideButton
+            link="#"
             $width="40rem"
             $height="5rem"
             $borderRadius="0.8rem"
