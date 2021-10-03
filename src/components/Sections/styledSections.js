@@ -208,6 +208,16 @@ export const SectionsH5 = styled.h5`
   & + p {
     margin-top: 2rem;
   }
+
+  @media screen and (max-width: 376px) {
+    font-size: calc(${({ theme }) => theme.font.size.xlarge} * 0.6);
+    line-height: 2.4rem;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 1023px) {
+    font-size: calc(${({ theme }) => theme.font.size.xlarge} * 0.8);
+    line-height: 2.8rem;
+  }
 `
 
 export const SectionsH6 = styled.h6`
