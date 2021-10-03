@@ -45,7 +45,7 @@ export const SectionWrapper = styled(SectionsWrapper)`
   }
   @keyframes moveDown {
     0% {
-      top: 0rem;
+      top: 2rem;
       opacity: 1;
     }
     100% {
@@ -54,12 +54,7 @@ export const SectionWrapper = styled(SectionsWrapper)`
     }
   }
 `
-export const TitleH1 = styled(SectionsH1)`
-  @media screen and (max-width: 1024px) {
-    font-size: 13vw;
-    line-height: 12vw;
-  }
-`
+export const TitleH1 = styled(SectionsH1)``
 
 export const TitleH2 = styled(SectionsH2)``
 
