@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <StockMarket />
       <main>{children}</main>
       <Footer />
     </>

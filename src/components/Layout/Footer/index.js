@@ -8,12 +8,9 @@ import SocialLinks from "../../Base/SocialLinks"
 import { Mail } from "@styled-icons/heroicons-outline/Mail"
 import { PhoneCall } from "@styled-icons/evaicons-solid/PhoneCall"
 import TelegramFooter from "./TelegramFooter"
-import { UserContext } from "../../../UserContext"
-
+import useWindowSize from "../../Utils/useWindowSize"
 const Footer = () => {
-  const { useWindowSize } = React.useContext(UserContext)
-
-  const [width] = useWindowSize()
+  const { width } = useWindowSize()
 
   return (
     <>

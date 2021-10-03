@@ -4,11 +4,10 @@ import NavMenu from "../../Base/NavMenu"
 import ButtonsWrapper from "./ButtonWrapper"
 import * as S from "./styled"
 import { UserContext } from "../../../UserContext"
+import useWindowSize from "../../Utils/useWindowSize"
 
 const Header = () => {
-  const { useWindowSize } = React.useContext(UserContext)
-
-  const [width] = useWindowSize()
+  const { width } = useWindowSize()
 
   return (
     <S.HeaderWrapper>

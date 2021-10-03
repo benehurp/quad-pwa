@@ -3,16 +3,14 @@ import * as S from "./styled"
 import MiniWideButton from "../../../Base/MiniWideButton"
 import Rotate3d from "../../../../images/rotate3d.png"
 import Cube3d from "../../../Base/Cube3d"
-import { UserContext } from "../../../../UserContext"
+import useWindowSize from "../../../Utils/useWindowSize"
 
 const HomeSection3 = () => {
-  const { useWindowSize } = React.useContext(UserContext)
+  const { width } = useWindowSize()
   const [widthTitle, setWidthTitle] = React.useState("")
   const [widthParagraph, setWidthParagraph] = React.useState("")
   const [positionText, setPositionText] = React.useState("")
   const [hide, setHide] = React.useState(null)
-
-  const [width] = useWindowSize()
 
   React.useEffect(() => {
     if (width < 1024) {
