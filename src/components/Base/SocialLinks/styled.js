@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 export const SocialMediaWrapper = styled.nav`
   width: 100%;
@@ -17,7 +16,7 @@ export const SocialMediaItem = styled.li`
   cursor: pointer;
 `
 
-export const SocialMediaLink = styled(Link)`
+export const SocialMediaLink = styled.a`
   color: ${({ theme }) => theme.colors.white};
 
   &:hover {

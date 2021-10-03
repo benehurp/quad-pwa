@@ -14,7 +14,7 @@ const SocialMedia = () => {
 
           return (
             <S.SocialMediaItem key={i}>
-              <S.SocialMediaLink to={linksContent.url}>
+              <S.SocialMediaLink href={linksContent.url}>
                 <Icon alt={linksContent.label} />
               </S.SocialMediaLink>
             </S.SocialMediaItem>
