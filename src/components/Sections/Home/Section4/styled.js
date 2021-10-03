@@ -1,4 +1,8 @@
 import styled from "styled-components"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
 import {
   SectionsWrapper,
   CardGradientBase,
@@ -12,23 +16,21 @@ import {
 } from "../../styledSections"
 
 export const SectionWrapper = styled(SectionsWrapper)`
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  @media screen and (max-width: 599px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .container {
     grid-column: 2/3;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
   }
 
-  .quotes {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 108%;
-    top: 12rem;
-    z-index: 0;
-  }
   .avatar-container {
     position: relative;
     left: 0;
@@ -43,22 +45,46 @@ export const SectionWrapper = styled(SectionsWrapper)`
     z-index: 100;
   }
   & .left {
-    width: 8rem;
+    width: 6rem;
+    padding: 1rem;
     transform: rotateY(180deg);
   }
   & .right {
-    width: 8rem;
+    padding: 1rem;
+    width: 6rem;
   }
   .swiper {
     width: 100%;
     overflow: hidden;
     padding: 10rem 5rem 5rem;
-    margin: 0;
+    margin: 2rem 0;
+    position: relative;
+
+    @media screen and (max-width: 599px) {
+      padding: 10rem 0rem 5rem;
+    }
+
+    .quotes {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      top: 5rem;
+      left: 0;
+      z-index: 100;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 55%;
   }
   .swiper-button-prev:after,
   .swiper-button-next:after {
     color: white;
     font-size: 30px;
+  }
+  .swiper-pagination {
+    bottom: 0;
   }
   .swiper-pagination-bullet {
     background: red;
@@ -84,7 +110,9 @@ export const TitleH3 = styled(SectionsH3)``
 
 export const TitleH4 = styled(SectionsH4)``
 
-export const TitleH5 = styled(SectionsH5)``
+export const TitleH5 = styled(SectionsH5)`
+  height: 6rem;
+`
 
 export const TitleH6 = styled(SectionsH6)``
 

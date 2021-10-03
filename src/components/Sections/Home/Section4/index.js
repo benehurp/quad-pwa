@@ -5,10 +5,8 @@ import Quotes from "../../../../images/svg/quotes.svg"
 import { Swiper, SwiperSlide } from "swiper/react"
 import MiniWideButton from "../../../Base/MiniWideButton"
 import Demo from "../../../../images/demo.jpg"
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
-import "swiper/css/scrollbar"
+import { UserContext } from "../../../../UserContext"
+
 import img01 from "../../../../images/testemunhos/Victor-S.jpg"
 import img02 from "../../../../images/testemunhos/Jorge-H-S-M.jpg"
 import img03 from "../../../../images/testemunhos/Lucas-S.jpg"
@@ -25,6 +23,33 @@ import img13 from "../../../../images/testemunhos/none.png"
 import img14 from "../../../../images/testemunhos/William-M.jpg"
 
 const HomeSection4 = () => {
+  const { useWindowSize } = React.useContext(UserContext)
+
+  const [characterSlice, setCharacterSlice] = React.useState(360)
+  const [slideQty, setSlideQty] = React.useState(2)
+  const [hide, setHide] = React.useState(true)
+  const [titleWidth, setTitleWidth] = React.useState("70%")
+
+  const [width] = useWindowSize()
+
+  React.useEffect(() => {
+    if (width < 1024) {
+      setCharacterSlice(200)
+      setTitleWidth("100%")
+    } else {
+      setCharacterSlice(360)
+      setTitleWidth("70%")
+    }
+
+    width < 768 ? setSlideQty(1) : setSlideQty(2)
+
+    if (width < 600) {
+      setHide(false)
+    } else {
+      setHide(true)
+    }
+  }, [width])
+
   const data = [
     {
       id: 1,
@@ -140,21 +165,23 @@ const HomeSection4 = () => {
       height=""
     >
       <div className="container">
-        <S.TitleH3>
-          Palavras de quem <br />
-          <span>investe com inteligência</span>
-        </S.TitleH3>
-        <div className="quotes">
-          <img src={Quotes} alt="Símbolo de aspas duplas" className="left" />
-          <img src={Quotes} alt="Símbolo de aspas duplas" className="right" />
+        <div>
+          <S.TitleH3 width={titleWidth} textAlign="left">
+            Palavras de quem <span>investe com inteligência</span>
+          </S.TitleH3>
         </div>
+
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={55}
-          slidesPerView={2}
-          navigation
+          slidesPerView={slideQty}
+          navigation={hide}
           pagination={{ clickable: true }}
         >
+          <div className="quotes">
+            <img src={Quotes} alt="Símbolo de aspas duplas" className="left" />
+            <img src={Quotes} alt="Símbolo de aspas duplas" className="right" />
+          </div>
           {data.map(people => (
             <SwiperSlide key={people.id}>
               <S.Card>
@@ -168,7 +195,7 @@ const HomeSection4 = () => {
                 <S.TitleH5 textAlign="center">{people.name}</S.TitleH5>
                 <div className="testimonial">
                   <S.Paragraph fontSize="xxsmall">
-                    {people.description.slice(0, 360)}...
+                    {people.description.slice(0, characterSlice)}...
                   </S.Paragraph>
                 </div>
                 <div className="btn-right">
