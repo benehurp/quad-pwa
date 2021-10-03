@@ -52,6 +52,11 @@ export const SectionsWrapper = styled.section`
     `}
   height: ${props => (props.height ? props.height : "auto")};
   min-height: 100vh;
+  padding: 0 5rem;
+
+  @media screen and (max-width: 376px) {
+    padding: 0 2rem;
+  }
 `
 
 export const CardGradientBase = styled.div`
