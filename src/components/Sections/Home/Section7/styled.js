@@ -15,24 +15,31 @@ export const SectionWrapper = styled(SectionsWrapper)`
   .container {
     grid-column: 2/3;
     width: 100%;
-    padding: 10rem 0;
   }
   ul {
     gap: 2rem;
     display: flex;
-    margin-top: 26rem;
-    align-items: center;
+    margin-top: 0rem;
+    align-items: flex-start;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
   .person {
     position: absolute;
-    top: -30rem;
-    padding: 3rem;
+    transform: translateY(-95%);
+    display: flex;
+    justify-content: center;
 
     & img {
       max-width: 100%;
       display: block;
       &:nth-child(2) {
         max-width: 10%;
+      }
+
+      @media screen and (max-width: 600px) {
+        max-width: 80%;
       }
     }
   }
@@ -63,17 +70,39 @@ export const TitleH6 = styled(SectionsH6)``
 export const Paragraph = styled(SectionsP)``
 
 export const Card = styled(CardGradientBase)`
-  padding: 17rem 3rem 3rem;
+  --lineHeigth: 30%;
+  padding: 20rem 3rem 5rem;
+  word-break: break-word;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 70rem;
-  top: 0;
+  margin-top: calc(var(--lineHeigth) + 5%);
+
   &:nth-child(2) {
-    height: 78rem;
-    & .person {
-      width: 85%;
-      top: -28rem;
+    margin-top: var(--lineHeigth);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 850px) {
+    margin-top: calc(var(--lineHeigth) - 5%);
+
+    &:nth-child(2) {
+      margin-top: calc(var(--lineHeigth) - 10%);
+    }
+  }
+
+  @media screen and (min-width: 470px) and (max-width: 768px) {
+    margin-top: calc(var(--lineHeigth) + 5%);
+
+    &:nth-child(2) {
+      margin-top: calc(var(--lineHeigth) + 5%);
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    margin-top: calc(var(--lineHeigth) + 20%);
+
+    &:nth-child(2) {
+      margin-top: calc(var(--lineHeigth) + 20%);
     }
   }
 `
