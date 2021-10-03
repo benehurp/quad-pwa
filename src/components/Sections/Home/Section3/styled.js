@@ -11,28 +11,51 @@ import {
 } from "../../styledSections"
 
 export const SectionWrapper = styled(SectionsWrapper)`
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
   .container {
     grid-column: 2/3;
     width: 100%;
     display: flex;
-  }
-  .left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-end;
-  }
-  .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-  }
-  img.rotate3d {
-    display: block;
-    width: 45px;
-    margin-bottom: 2rem;
+
+    @media screen and (max-width: 1023px) {
+      flex-direction: column;
+    }
+
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-end;
+
+      @media screen and (max-width: 1023px) {
+        width: 100%;
+        align-items: center;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+
+      @media screen and (max-width: 1023px) {
+        width: 100%;
+        height: 42rem;
+      }
+    }
+
+    img.rotate3d {
+      display: block;
+      width: 45px;
+      margin-bottom: 2rem;
+
+      @media screen and (max-width: 1023px) {
+        margin-top: 5rem;
+      }
+    }
   }
 `
 
