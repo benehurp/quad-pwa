@@ -149,12 +149,22 @@ export const SectionsH3 = styled.h3`
   font-weight: ${({ theme }) => theme.font.weight.extrabold};
   text-transform: uppercase;
   line-height: 4rem;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
   & > span {
     color: ${({ theme }) => theme.colors.red};
   }
   & + p {
     margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: calc(${({ theme }) => theme.font.size.extra} * 0.6);
+    line-height: 2.8rem;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 1023px) {
+    font-size: calc(${({ theme }) => theme.font.size.extra} * 0.8);
+    line-height: 3.4rem;
   }
 `
 
