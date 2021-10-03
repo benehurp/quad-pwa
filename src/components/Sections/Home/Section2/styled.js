@@ -12,31 +12,52 @@ import {
 } from "../../styledSections"
 
 export const SectionWrapper = styled(SectionsWrapper)`
+  @media screen and (max-width: 599px) {
+    padding: 0rem 2rem;
+  }
   .container {
     grid-column: 2/3;
     margin: 8rem;
+
+    @media screen and (max-width: 767px) {
+      margin: 8rem 0rem;
+    }
   }
   .left {
     width: 100%;
     position: relative;
-    left: 0;
-    top: 0;
+
+    @media screen and (max-width: 1023px) {
+      position: unset;
+      display: flex;
+      justify-content: center;
+    }
   }
   .right {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: -webkit-right;
+
+    @media screen and (max-width: 1023px) {
+      text-align: -webkit-center;
+    }
   }
   .big-logo {
     position: absolute;
-    display: flex;
-    align-items: center;
     top: -25rem;
     left: -23rem;
     width: 60rem;
     height: auto;
+
+    @media screen and (max-width: 1023px) {
+      position: unset;
+      width: 80%;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+      width: 50rem;
+      top: -23rem;
+      left: -15rem;
+    }
   }
   .big-logo-title {
     margin-bottom: 2rem;
@@ -60,4 +81,13 @@ export const TitleH6 = styled(SectionsH6)``
 
 export const Paragraph = styled(SectionsP)``
 
-export const Card = styled(CardGradientBase)``
+export const Card = styled(CardGradientBase)`
+  @media screen and (max-width: 600px) {
+    padding: 5rem 0;
+  }
+
+  @media screen and (max-width: 1023px) {
+    flex-direction: column-reverse;
+    gap: 5rem 0;
+  }
+`

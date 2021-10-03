@@ -18,14 +18,14 @@ const HomeSection2 = () => {
       height=""
     >
       <div className="container">
-        <S.Card width="100%">
+        <S.Card>
           <div className="left">
             <div className="big-logo">
               <img src={BigLogoQuad} alt="Símbolo gigante da QuadFinancial" />
             </div>
           </div>
           <div className="right">
-            <S.TitleH4 width="80%">
+            <S.TitleH4 width={"80%"}>
               Sua caminhada para obter retornos absolutos no médio prazo começa
               aqui
             </S.TitleH4>
