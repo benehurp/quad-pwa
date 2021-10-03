@@ -4,6 +4,7 @@ import * as S from "./styled"
 const MiniWideButton = ({
   link,
   children,
+  $externalLink,
   $fontSize,
   $fontWeigth,
   $color,
@@ -19,27 +20,53 @@ const MiniWideButton = ({
   $gradientPercent2,
   $borderRadius,
 }) => {
-  return (
-    <S.ButtonRoundStyledLink
-      to={link}
-      $fontSize={$fontSize}
-      $fontWeigth={$fontWeigth}
-      $color={$color}
-      $width={$width}
-      $height={$height}
-      $paddingTop={$paddingTop}
-      $paddingRight={$paddingRight}
-      $marginTop={$marginTop}
-      $gradientDeg={$gradientDeg}
-      $gradientColor1={$gradientColor1}
-      $gradientColor2={$gradientColor2}
-      $gradientPercent1={$gradientPercent1}
-      $gradientPercent2={$gradientPercent2}
-      $borderRadius={$borderRadius}
-    >
-      {children}
-    </S.ButtonRoundStyledLink>
-  )
+  if (!$externalLink) {
+    return (
+      <S.ButtonInternalLink
+        to={link}
+        $fontSize={$fontSize}
+        $fontWeigth={$fontWeigth}
+        $color={$color}
+        $width={$width}
+        $height={$height}
+        $paddingTop={$paddingTop}
+        $paddingRight={$paddingRight}
+        $marginTop={$marginTop}
+        $gradientDeg={$gradientDeg}
+        $gradientColor1={$gradientColor1}
+        $gradientColor2={$gradientColor2}
+        $gradientPercent1={$gradientPercent1}
+        $gradientPercent2={$gradientPercent2}
+        $borderRadius={$borderRadius}
+      >
+        {children}
+      </S.ButtonInternalLink>
+    )
+  }
+  if ($externalLink) {
+    return (
+      <S.ButtonInternalLink
+        as="a"
+        href={link}
+        $fontSize={$fontSize}
+        $fontWeigth={$fontWeigth}
+        $color={$color}
+        $width={$width}
+        $height={$height}
+        $paddingTop={$paddingTop}
+        $paddingRight={$paddingRight}
+        $marginTop={$marginTop}
+        $gradientDeg={$gradientDeg}
+        $gradientColor1={$gradientColor1}
+        $gradientColor2={$gradientColor2}
+        $gradientPercent1={$gradientPercent1}
+        $gradientPercent2={$gradientPercent2}
+        $borderRadius={$borderRadius}
+      >
+        {children}
+      </S.ButtonInternalLink>
+    )
+  }
 }
 
 export default MiniWideButton

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-export const ButtonRoundStyledLink = styled(Link)`
+export const ButtonInternalLink = styled(Link)`
   font-size: ${props =>
     props.$fontSize
       ? ({ theme }) => theme.font.size[props.$fontSize]
