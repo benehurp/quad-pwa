@@ -23,6 +23,7 @@ const ButtonsWrapper = ({ oneButton }) => {
         : [
             <MiniWideButton
               key="1"
+              $externalLink={true}
               link="https://t.me/canaldaquad"
               $color={"blue"}
               $width={"12rem"}
@@ -44,6 +45,7 @@ const ButtonsWrapper = ({ oneButton }) => {
             </MiniWideButton>,
             <MiniWideButton
               key="2"
+              $externalLink={true}
               link="https://membros.quadfinancial.com.br/"
               $width={"12rem"}
               $height={"2.5rem"}

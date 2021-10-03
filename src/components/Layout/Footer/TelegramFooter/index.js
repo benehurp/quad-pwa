@@ -12,6 +12,7 @@ const TelegramFooter = () => {
         gratuitamente e fique por dentro de atualizações.
       </div>
       <MiniWideButton
+        $externalLink={true}
         link="https://t.me/canaldaquad"
         $color={"blue"}
         $width={"32rem"}
