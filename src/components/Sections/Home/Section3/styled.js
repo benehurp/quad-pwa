@@ -11,14 +11,6 @@ import {
 } from "../../styledSections"
 
 export const SectionWrapper = styled(SectionsWrapper)`
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-
-  @media screen and (max-width: 599px) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .container {
     grid-column: 2/3;
     width: 100%;
