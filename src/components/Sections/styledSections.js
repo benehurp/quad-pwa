@@ -99,6 +99,21 @@ export const SectionsH1 = styled.h1`
   & + p {
     margin-top: 2rem;
   }
+
+  @media screen and (max-width: 520px) {
+    font-size: calc(${({ theme }) => theme.font.size.xxextra} * 0.4);
+    line-height: 4rem;
+  }
+
+  @media screen and (min-width: 520px) and (max-width: 690px) {
+    font-size: calc(${({ theme }) => theme.font.size.xxextra} * 0.6);
+    line-height: 6rem;
+  }
+
+  @media screen and (min-width: 690px) and (max-width: 1023px) {
+    font-size: calc(${({ theme }) => theme.font.size.xxextra} * 0.8);
+    line-height: 8rem;
+  }
 `
 
 export const SectionsH2 = styled.h2`
@@ -114,6 +129,16 @@ export const SectionsH2 = styled.h2`
   }
   & + p {
     margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: calc(${({ theme }) => theme.font.size.xextra} * 0.6);
+    line-height: 4rem;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 1023px) {
+    font-size: calc(${({ theme }) => theme.font.size.xextra} * 0.8);
+    line-height: 5rem;
   }
 `
 
@@ -146,6 +171,16 @@ export const SectionsH4 = styled.h4`
   }
   & + p {
     margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: calc(${({ theme }) => theme.font.size.xxlarge} * 0.6);
+    line-height: 2.6rem;
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 1023px) {
+    font-size: calc(${({ theme }) => theme.font.size.xxlarge} * 0.8);
+    line-height: 3rem;
   }
 `
 
