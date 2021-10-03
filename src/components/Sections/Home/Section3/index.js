@@ -87,7 +87,7 @@ const HomeSection3 = () => {
           <MiniWideButton
             link="#"
             $width="100%"
-            $height="5rem"
+            $height="6rem"
             $borderRadius=".8rem"
             $fontSize="medium"
             $marginTop="2rem"
