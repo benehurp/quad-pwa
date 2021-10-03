@@ -4,7 +4,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper"
 import Quotes from "../../../../images/svg/quotes.svg"
 import { Swiper, SwiperSlide } from "swiper/react"
 import MiniWideButton from "../../../Base/MiniWideButton"
-import Demo from "../../../../images/demo.jpg"
 import { UserContext } from "../../../../UserContext"
 
 import img01 from "../../../../images/testemunhos/Victor-S.jpg"
@@ -200,6 +199,7 @@ const HomeSection4 = () => {
                 </div>
                 <div className="btn-right">
                   <MiniWideButton
+                    link="#"
                     $width="10rem"
                     $gradientColor1="red"
                     $gradientColor2="red"
