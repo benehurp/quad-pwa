@@ -52,10 +52,10 @@ export const SectionsWrapper = styled.section`
     `}
   height: ${props => (props.height ? props.height : "auto")};
   min-height: 100vh;
-  padding: 0 5rem;
+  padding: 5rem 5rem;
 
-  @media screen and (max-width: 376px) {
-    padding: 0 2rem;
+  @media screen and (max-width: 599px) {
+    padding: 5rem 2rem;
   }
 `
 
