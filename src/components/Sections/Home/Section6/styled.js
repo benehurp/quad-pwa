@@ -15,13 +15,19 @@ export const SectionWrapper = styled(SectionsWrapper)`
   .container {
     grid-column: 2/3;
     width: 100%;
-    padding: 10rem 0;
   }
-  .left {
+  .left,
+  .rigth {
     width: 50%;
   }
-  .right {
-    width: 50%;
+
+  @media screen and (max-width: 768px) {
+    .left {
+      width: 100%;
+    }
+    .rigth {
+      display: none;
+    }
   }
 `
 

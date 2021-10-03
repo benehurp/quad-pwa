@@ -20,10 +20,9 @@ const HomeSection6 = () => {
       <div className="container">
         <div className="left">
           <S.TitleH2>
-            Atravesse <br />
-            os ciclos guiado pelo <span>Método M4D</span>
+            Atravesse os ciclos guiado pelo <span>Método M4D</span>
           </S.TitleH2>
-          <S.Paragraph width="85%">
+          <S.Paragraph>
             Ao longo dos últimos 45 anos, Jarbas Gambogi estudou até se tornar
             especialista no mercado de capitais. Finalmente, por volta dos anos
             2000, reuniu um massivo volume de conhecimento sobre o behaviorismo
@@ -44,7 +43,7 @@ const HomeSection6 = () => {
               que se provou eficaz em campo ao longo das últimas décadas.
             </S.Paragraph>
           </S.Card>
-          <S.Paragraph width="85%">
+          <S.Paragraph>
             Através de seus preceitos, analisamos e dominamos as forças que
             movem os mercados para nos expormos com inteligência, sempre de
             acordo com os sinais fornecidos pelos indicadores das Quatro
