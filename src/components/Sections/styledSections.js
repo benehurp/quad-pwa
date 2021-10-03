@@ -44,9 +44,7 @@ export const SectionsWrapper = styled.section`
     css`
       background-image: url(${props => props.backgroundImage});
       background-position: ${props =>
-        props.backgroundPosition
-          ? ({ theme }) => theme.colors[props.backgroundPosition]
-          : "top left"};
+        props.backgroundPosition ? props.backgroundPosition : "top left"};
       background-repeat: no-repeat;
       background-size: cover;
     `}
