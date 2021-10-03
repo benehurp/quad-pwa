@@ -2,14 +2,26 @@ import React from "react"
 import * as S from "./styled"
 import ImageSection from "../../../../images/home-section6.jpg"
 import MiniWideButton from "../../../Base/MiniWideButton"
+import { UserContext } from "../../../../UserContext"
 
 const HomeSection6 = () => {
+  const { useWindowSize } = React.useContext(UserContext)
+  const [positionBg, setPositionBg] = React.useState("top left")
+
+  const [width] = useWindowSize()
+
+  React.useEffect(() => {
+    width > 768 && width < 1024
+      ? setPositionBg("top right")
+      : setPositionBg("top left")
+  }, [width])
+
   return (
     <S.SectionWrapper
       backgroundType="image"
       backgroundColor=""
       backgroundImage={ImageSection}
-      backgroundPosition=""
+      backgroundPosition={positionBg}
       gradientDeg=""
       gradientColor1=""
       gradientColor2=""
