@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.header`
   background-color: ${({ theme }) => theme.colors.gray};
   padding: 0 5rem;
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 620px) {
     padding: 0 2rem;
   }
 `

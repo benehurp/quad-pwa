@@ -52,7 +52,7 @@ export const SectionsWrapper = styled.section`
   min-height: 100vh;
   padding: 5rem 5rem;
 
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 620px) {
     padding: 5rem 2rem;
   }
 `

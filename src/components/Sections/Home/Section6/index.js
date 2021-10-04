@@ -9,7 +9,7 @@ const HomeSection6 = () => {
   const [positionBg, setPositionBg] = React.useState("top left")
 
   React.useEffect(() => {
-    width > 768 && width < 1024
+    width > 767 && width < 1024
       ? setPositionBg("top right")
       : setPositionBg("top left")
   }, [width])

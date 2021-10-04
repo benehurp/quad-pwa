@@ -6,7 +6,7 @@ export const FooterWrapper = styled.footer`
   background-color: ${({ theme }) => theme.colors.gray};
   padding: 0 5rem;
 
-  @media screen and (max-width: 376px) {
+  @media screen and (max-width: 620px) {
     padding: 0 2rem;
   }
 `
@@ -14,7 +14,7 @@ export const FooterWrapper = styled.footer`
 export const FooterItems = styled.div`
   grid-column: 2/3;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
 `
 export const FooterLeft = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ export const FooterLeft = styled.div`
   align-items: flex-start;
   justify-content: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     grid-column: 2/3;
     align-items: center;
     padding-top: 5rem;
@@ -41,11 +41,12 @@ export const FooterCenter = styled.div`
   justify-content: center;
   gap: 0 5rem;
   height: 16rem;
-  grid-column: 2/3;
+  grid-column: 2/4;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     height: auto;
     padding-top: 2rem;
+    grid-column: 2/3;
   }
 `
 
@@ -67,7 +68,7 @@ export const AddressItem = styled.address`
   font-weight: 600;
   margin-bottom: 5rem;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 960px) {
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 5rem;

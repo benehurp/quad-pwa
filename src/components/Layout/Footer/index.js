@@ -11,6 +11,15 @@ import TelegramFooter from "./TelegramFooter"
 import useWindowSize from "../../Utils/useWindowSize"
 const Footer = () => {
   const { width } = useWindowSize()
+  const [logoSize, setLogoSize] = React.useState("65px")
+
+  React.useEffect(() => {
+    if (width <= 768) {
+      setLogoSize("95px")
+    } else {
+      setLogoSize("65px")
+    }
+  }, [width])
 
   return (
     <>
@@ -18,7 +27,7 @@ const Footer = () => {
       <S.FooterWrapper>
         <S.FooterItems>
           <S.FooterLeft>
-            <Logo heigth="65px" alt="Logo do Rodapé: Quad Financial" />
+            <Logo heigth={logoSize} alt="Logo do Rodapé: Quad Financial" />
             <S.SocialLinksWrapper>
               <SocialLinks />
               <S.SocialLinksDescription>
@@ -39,7 +48,7 @@ const Footer = () => {
                 contato@quadfinancial.com.br
               </FooterContacts>
             </S.AddressItem>
-            {width > 768 ? <NavMenu /> : " "}
+            {width > 960 ? <NavMenu /> : ""}
           </S.FooterCenter>
         </S.FooterItems>
       </S.FooterWrapper>
