@@ -19,7 +19,6 @@ const HomeSection1 = () => {
       gradientColor2=""
       gradientPercent1=""
       gradientPercent2=""
-      height=""
     >
       <div className="container">
         <S.TitleH1>
