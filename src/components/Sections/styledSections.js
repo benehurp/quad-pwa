@@ -48,9 +48,7 @@ export const SectionsWrapper = styled.section`
       background-repeat: no-repeat;
       background-size: cover;
     `}
-  height: ${props => (props.height ? props.height : "auto")};
-  min-height: 100vh;
-  padding: 5rem 5rem;
+  padding: 10rem 5rem;
 
   @media screen and (max-width: 620px) {
     padding: 5rem 2rem;
@@ -99,8 +97,8 @@ export const SectionsH1 = styled.h1`
   }
 
   @media screen and (max-width: 520px) {
-    font-size: calc(${({ theme }) => theme.font.size.xxextra} * 0.4);
-    line-height: 4rem;
+    font-size: calc(${({ theme }) => theme.font.size.xxextra} * 0.45);
+    line-height: 4.5rem;
   }
 
   @media screen and (min-width: 520px) and (max-width: 690px) {
