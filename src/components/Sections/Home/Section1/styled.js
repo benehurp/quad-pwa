@@ -35,15 +35,38 @@ export const SectionWrapper = styled(SectionsWrapper)`
     left: 50%;
     transform: translateY(50%) translateX(-50%);
   }
-
   .move-down-icon {
     position: relative;
     width: 6rem;
-    animation-name: moveDown;
     animation-iteration-count: infinite;
     animation-duration: 1.2s;
   }
-  @keyframes moveDown {
+
+  @media screen and (max-width: 620px) {
+    .move-down-icon {
+      width: 4rem;
+      animation-name: slideDownMobile;
+    }
+  }
+
+  @media screen and (min-width: 620px) {
+    .move-down-icon {
+      animation-name: slideDown;
+    }
+  }
+
+  @keyframes slideDownMobile {
+    0% {
+      top: 10rem;
+      opacity: 1;
+    }
+    100% {
+      top: 18rem;
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideDown {
     0% {
       top: 2rem;
       opacity: 1;
