@@ -8,23 +8,20 @@ import HomeSection4 from "../components/Sections/Home/Section4"
 import HomeSection5 from "../components/Sections/Home/Section5"
 import HomeSection6 from "../components/Sections/Home/Section6"
 import HomeSection7 from "../components/Sections/Home/Section7"
-import { UserStorage } from "../UserContext"
 
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <UserStorage>
-    <Layout>
-      <Seo title="Home" />
-      <HomeSection1 />
-      <HomeSection2 />
-      <HomeSection3 />
-      <HomeSection4 />
-      <HomeSection5 />
-      <HomeSection6 />
-      <HomeSection7 />
-    </Layout>
-  </UserStorage>
+  <Layout>
+    <Seo title="Home" />
+    <HomeSection1 />
+    <HomeSection2 />
+    <HomeSection3 />
+    <HomeSection4 />
+    <HomeSection5 />
+    <HomeSection6 />
+    <HomeSection7 />
+  </Layout>
 )
 
 export default IndexPage
