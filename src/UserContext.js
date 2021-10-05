@@ -3,5 +3,11 @@ import React from "react"
 export const UserContext = React.createContext()
 
 export const UserStorage = ({ children }) => {
-  return <UserContext.Provider value={{}}>{children}</UserContext.Provider>
+  const [openMenu, setOpenMenu] = React.useState(false)
+
+  return (
+    <UserContext.Provider value={{ openMenu, setOpenMenu }}>
+      {children}
+    </UserContext.Provider>
+  )
 }
