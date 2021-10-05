@@ -32,6 +32,7 @@ export const MenuMobileButton = styled.button`
       `}
   }
   &::before {
+    opacity: 0;
     width: 0;
     height: 0;
     box-shadow: none;
@@ -39,6 +40,7 @@ export const MenuMobileButton = styled.button`
     ${props =>
       props.openMenu &&
       css`
+        opacity: 1;
         width: 8rem;
         height: 3px;
         transform: translateX(50%) rotate(45deg);
