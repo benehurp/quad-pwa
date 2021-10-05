@@ -11,7 +11,7 @@ function Box(props) {
   const ref = useRef()
 
   useFrame(() => {
-    ref.current.rotation.y += 0.0005
+    ref.current.rotation.y += 0.001
   })
 
   return (
@@ -27,7 +27,7 @@ function Box(props) {
       >
         <S.CubeFace>
           <S.ImgCube src={Search} />
-          <S.TitleH3>Valorização:</S.TitleH3>
+          <S.TitleH3>Valoração:</S.TitleH3>
           <p>
             esta dimensão, com impacto no longo prazo, esclarece o quão caro ou
             barato estão os mercados.
@@ -103,7 +103,7 @@ export default function Cube3d() {
     <Canvas
       orthographic
       dpr={[1, 2]}
-      camera={{ zoom: 22, position: [-10, 20, -25], fov: 50 }}
+      camera={{ zoom: 19, position: [-10, 20, -25], fov: 50 }}
     >
       <OrbitControls
         enablePan={false}
