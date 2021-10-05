@@ -3,6 +3,7 @@ import * as S from "./styled"
 import MiniWideButton from "../../../Base/MiniWideButton"
 import TelegramIcon from "../../../../images/svg/icon-telegram.svg"
 import SigIn from "../../../../images/svg/icon-signin.svg"
+import MenuMobileButton from "../../../Base/MobileButton"
 
 const ButtonsWrapper = ({ showButtons }) => {
   const buttons = {
@@ -48,7 +49,7 @@ const ButtonsWrapper = ({ showButtons }) => {
       )
     },
     menu: () => {
-      return "Menu"
+      return <MenuMobileButton />
     },
   }
 
