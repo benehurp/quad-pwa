@@ -116,19 +116,15 @@ const HomeSection7 = () => {
               textTransform="uppercase"
               textAlign="center"
             >
-              Fundador / Educador Financeiro
+              Diretor Executivo / Analista
             </S.Paragraph>
             <hr />
             <S.Paragraph fontSize="xsmall" textAlign="center">
-              Tiago é investidor macro, trader de opções e o principal educador
-              financeiro da Quad, sendo responsável pela produção de nossos
-              conteúdos educativos nas mídias sociais e internamente com os
-              membros.
-            </S.Paragraph>
-
-            <S.Paragraph fontSize="xsmall" textAlign="center">
-              Formado em direito e com vasto conhecimento em negócios e
-              empreendedorismo, é quem lidera a estratégia empresarial da Quad.
+              Formado em Direito (UNISC), Tiago é Analista CNPI-T e fundou a
+              QUAD Financial ao lado de Gambogi. Tiago se dedica a identificar
+              as maiores oportunidades micro no stock picking para identificar
+              os ativos com potencial de super performance. Além disso, é ele
+              quem produz os conteúdos nas mídias sociais da Quad.
             </S.Paragraph>
 
             <div className="stamp">
