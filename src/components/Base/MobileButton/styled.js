@@ -62,3 +62,27 @@ export const MenuMobileButton = styled.button`
     }
   }
 `
+
+export const MenuMobileContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 9rem;
+  background: white;
+  z-index: 100;
+  --opacity: 1;
+  animation-name: fadeIn;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  opacity: var(--opacity);
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: var(--opacity);
+    }
+  }
+`
