@@ -6,7 +6,7 @@ export const CubeFace = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  user-select: none;
+  pointer-events: none;
 `
 
 export const TitleH3 = styled.h3`
