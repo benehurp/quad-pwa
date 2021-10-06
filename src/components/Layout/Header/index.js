@@ -17,14 +17,6 @@ const Header = () => {
         {width >= 580 && width < 990 && <ButtonsWrapper showButtons="2" />}
         {width >= 990 && <NavMenu />}
         {width >= 990 && <ButtonsWrapper />}
-
-        {/* {width > 768 ? (
-          <ButtonsWrapper oneButton={false} />
-        ) : width > 375 ? (
-          <ButtonsWrapper oneButton={true} />
-        ) : (
-          "Menu"
-        )} */}
       </S.HeaderItems>
     </S.HeaderWrapper>
   )
