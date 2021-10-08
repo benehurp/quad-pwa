@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Institucional Quadfinancial`,
-    description: `Site oficial da Quadfinancial`,
-    author: `@benehurp`,
-    siteUrl: `https://quadpwa.gatsbyjs.io/`,
+    title: `Quadfinancial`,
+    description: `A QUAD Financial é uma empresa de análise de investimentos, com foco no mercado de ações. Desenvolvemos o Método M4D, uma abordagem de investimento sem precedentes no mercado financeiro. Com ele, é possível extrair o sinal emitido por cada dimensão do mercado de ações e assim mensurar o risco de exposição ao mercado. A partir disso, construímos nossa estratégia de investimentos visando obter retornos consistentes no médio prazo.`,
+    author: `@benehur.pessoa`,
+    siteUrl: `https://quadfinancial.com.br/`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -15,14 +15,6 @@ module.exports = {
       options: {
         fonts: [`Montserrat\:300,400,600,800`],
         display: "swap",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Montserrat"],
-        },
       },
     },
     {
@@ -67,11 +59,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Quad Financial - Site oficial`,
-        short_name: `Quad Financial`,
+        name: `QuadFinancial`,
+        short_name: `QuadFinancial`,
+        orientation: `portrait`,
         start_url: `/`,
+        description: `A QUAD Financial é uma empresa de análise de investimentos, com foco no mercado de ações.`,
         background_color: `#172331`,
         theme_color: `#f32530`,
+        scope: `/`,
         display: `minimal-ui`,
         icon: `src/images/favQuad.png`,
       },
@@ -79,6 +74,6 @@ module.exports = {
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
