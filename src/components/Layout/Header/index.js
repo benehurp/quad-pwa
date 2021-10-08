@@ -12,8 +12,8 @@ const Header = () => {
     <S.HeaderWrapper>
       <S.HeaderItems>
         <Logo heigth="70px" alt="Logo do Header: Quad Financial" />
-        {width < 420 && <ButtonsWrapper showButtons="0" />}
-        {width >= 420 && width < 580 && <ButtonsWrapper showButtons="1" />}
+        {width <= 420 && <ButtonsWrapper showButtons="0" />}
+        {width > 420 && width < 580 && <ButtonsWrapper showButtons="1" />}
         {width >= 580 && width < 990 && <ButtonsWrapper showButtons="2" />}
         {width >= 990 && <NavMenu />}
         {width >= 990 && <ButtonsWrapper />}
