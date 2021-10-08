@@ -16,6 +16,7 @@ export const FooterItems = styled.div`
   display: grid;
   grid-template-columns: 1.5fr 2fr 1.5fr;
 `
+
 export const FooterLeft = styled.div`
   display: flex;
   flex-direction: column;

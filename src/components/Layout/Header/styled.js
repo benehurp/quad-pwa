@@ -4,8 +4,9 @@ export const HeaderWrapper = styled.header`
   grid-template-columns: ${({ theme }) => theme.breakingPoints.normal};
   display: grid;
   background-color: ${({ theme }) => theme.colors.gray};
+  position: sticky;
+  top: 0;
   padding: 0 5rem;
-  position: fixed;
   z-index: 99999999;
 
   @media screen and (max-width: 620px) {
