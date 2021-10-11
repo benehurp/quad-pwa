@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components"
+import { Link } from "gatsby"
 
 export const MenuMobileButton = styled.button`
   background: transparent;
@@ -65,11 +66,11 @@ export const MenuMobileButton = styled.button`
 
 export const MenuMobileContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 91vh;
   position: fixed;
   left: 0;
   top: 9rem;
-  background: white;
+  background: ${({ theme }) => theme.colors.white};
   z-index: 100;
   --opacity: 1;
   animation-name: fadeIn;
@@ -85,4 +86,56 @@ export const MenuMobileContainer = styled.div`
       opacity: var(--opacity);
     }
   }
+`
+
+export const MenuList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+  padding: 2rem 5rem;
+
+  .buttons-wrapper {
+    padding-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+`
+
+export const MenuItem = styled.li`
+  border-bottom: 1.5px solid ${({ theme }) => theme.colors.gray3};
+  padding: 0 0 1rem;
+  margin-top: 2rem;
+  width: 100%;
+
+  ${props =>
+    props.disable === "true" &&
+    css`
+      opacity: 0.1;
+    `}
+`
+
+export const MenuLink = styled(Link)`
+  color: ${({ theme }) => theme.colors.gray3};
+  font-size: ${({ theme }) => theme.font.size.large};
+  font-weight: ${({ theme }) => theme.font.weight.semibold};
+  text-decoration: none;
+  &:hover {
+    color: ${({ theme }) => theme.colors.red};
+  }
+
+  ${props =>
+    props.disable === "true" &&
+    css`
+      &:hover {
+        color: ${({ theme }) => theme.colors.gray3};
+        cursor: unset;
+        text-decoration: none;
+      }
+    `}
 `
