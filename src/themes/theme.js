@@ -3,6 +3,7 @@ export default {
     red: "#f32530",
     red2: "#9e2836",
     white: "#f2f2f2",
+    whitePure: "#fff",
     gray: "#172331",
     gray2: "#071321",
     gray3: "#060e19",
