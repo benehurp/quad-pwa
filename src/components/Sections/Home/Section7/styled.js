@@ -71,7 +71,7 @@ export const Paragraph = styled(SectionsP)``
 
 export const Card = styled(CardGradientBase)`
   --lineHeigth: 30%;
-  padding: 20rem 3rem 5rem;
+  padding: 20rem 3rem 8rem;
   word-break: break-word;
   display: flex;
   flex-direction: column;
