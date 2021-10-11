@@ -92,7 +92,7 @@ export const MenuList = styled.ul`
   display: flex;
   flex-direction: column;
   color: black;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100%;
   gap: 2rem;

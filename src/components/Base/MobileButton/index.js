@@ -21,13 +21,22 @@ const MobileButton = () => {
             {menuData.map(item =>
               item.url.slice(0, 4) === "http" ? (
                 <S.MenuItem key={item.id} disable={item.disable}>
-                  <S.MenuLink disable={item.disable} as="a" href={item.url}>
+                  <S.MenuLink
+                    disable={item.disable}
+                    as="a"
+                    href={item.url}
+                    onClick={() => setOpenMenu(!openMenu)}
+                  >
                     {item.title}
                   </S.MenuLink>
                 </S.MenuItem>
               ) : (
                 <S.MenuItem key={item.id} disable={item.disable}>
-                  <S.MenuLink disable={item.disable} to={item.url}>
+                  <S.MenuLink
+                    disable={item.disable}
+                    to={item.url}
+                    onClick={() => setOpenMenu(!openMenu)}
+                  >
                     {item.title}
                   </S.MenuLink>
                 </S.MenuItem>
