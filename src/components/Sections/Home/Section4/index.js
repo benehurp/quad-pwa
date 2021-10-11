@@ -27,7 +27,7 @@ const HomeSection4 = () => {
 
     width < 768 ? setSlideQty(1) : setSlideQty(2)
 
-    if (width < 600) {
+    if (width < 620) {
       setHide(false)
     } else {
       setHide(true)

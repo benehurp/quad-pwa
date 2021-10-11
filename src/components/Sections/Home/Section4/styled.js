@@ -53,7 +53,7 @@ export const SectionWrapper = styled(SectionsWrapper)`
     margin: 2rem 0;
     position: relative;
 
-    @media screen and (max-width: 599px) {
+    @media screen and (max-width: 620px) {
       padding: 10rem 0rem 5rem;
     }
 
