@@ -14,7 +14,7 @@ const NavMenu = () => {
               </S.MenuLink>
             </S.MenuItem>
           ) : (
-            <S.MenuItem key={item.id}>
+            <S.MenuItem key={item.id} disable={item.disable}>
               <S.MenuLink disable={item.disable} to={item.url}>
                 {item.title}
               </S.MenuLink>

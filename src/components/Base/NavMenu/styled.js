@@ -35,7 +35,7 @@ export const MenuLink = styled(Link)`
       opacity: 0.2;
       &:hover {
         color: ${({ theme }) => theme.colors.white};
-        cursor: pointer;
+        cursor: unset;
         text-decoration: none;
       }
     `}
