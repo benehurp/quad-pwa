@@ -6,12 +6,14 @@ import * as S from "./styled"
 import Analytics from "../../../images/svg/cube-analytics.svg"
 import Search from "../../../images/svg/cube-search.svg"
 import Rotate from "../../../images/svg/cube-rotate.svg"
+import Smile from "../../../images/svg/cube-smile.svg"
+import Chart from "../../../images/svg/cube-chart-bar.svg"
 
 function Box(props) {
   const ref = useRef()
 
   useFrame(() => {
-    ref.current.rotation.y += 0.001
+    ref.current.rotation.y += 0.002
   })
 
   return (
@@ -58,7 +60,7 @@ function Box(props) {
         occlude
       >
         <S.CubeFace>
-          <S.ImgCube src={Search} />
+          <S.ImgCube src={Chart} />
           <S.TitleH3>Indicadores econômicos:</S.TitleH3>
           <p>
             eles são o alicerce da tendência primária do mercado e indicam se o
@@ -74,7 +76,7 @@ function Box(props) {
         occlude
       >
         <S.CubeFace>
-          <S.ImgCube src={Analytics} />
+          <S.ImgCube src={Smile} />
           <S.TitleH3>Sentimento:</S.TitleH3>
           <p>
             esta dimensão mensura a propensão ao risco dos investidores. Euforia
