@@ -97,7 +97,7 @@ export const SectionsH1 = styled.h1`
   }
 
   @media screen and (max-width: 520px) {
-    font-size: calc(${({ theme }) => theme.font.size.xxextra} * 0.45);
+    font-size: calc(${({ theme }) => theme.font.size.xxextra} * 0.4);
     line-height: 4.5rem;
   }
 

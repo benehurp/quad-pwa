@@ -14,7 +14,7 @@ export default {
     green: "#2fa700",
   },
   breakingPoints: {
-    normal: "1fr minmax(320px, 1024px) 1fr",
+    normal: "1fr minmax(280px, 1024px) 1fr",
   },
   font: {
     family: "'Montserrat', Arial, Helvetica, sans-serif",

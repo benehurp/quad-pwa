@@ -64,18 +64,19 @@ export const MenuMobileButton = styled.button`
   }
 `
 
-export const MenuMobileContainer = styled.div`
+export const MenuMobileContainer = styled.aside`
   width: 100%;
   height: 91vh;
   position: fixed;
   left: 0;
   top: 9rem;
+  overflow: auto;
   background: ${({ theme }) => theme.colors.white};
   z-index: 100;
   --opacity: 1;
   animation-name: fadeIn;
   animation-timing-function: linear;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   opacity: var(--opacity);
 
   @keyframes fadeIn {
