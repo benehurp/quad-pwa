@@ -1,23 +1,25 @@
 import styled from "styled-components"
 
-export const FooterWrapper = styled.footer`
-  display: grid;
-  grid-template-columns: ${({ theme }) => theme.breakingPoints.normal};
-  background-color: ${({ theme }) => theme.colors.gray};
-  padding: 0 5rem;
+export const Footer = styled.footer`
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: ${({ theme }) => theme.breakingPoints.normal};
+    background-color: ${({ theme }) => theme.colors.gray};
+    padding: 0 5rem;
 
-  @media screen and (max-width: 620px) {
-    padding: 0 2rem;
+    @media screen and (max-width: 620px) {
+      padding: 0 2rem;
+    }
   }
 `
 
-export const FooterItems = styled.div`
+export const FooterColumn = styled.div`
   grid-column: 2/3;
   display: grid;
   grid-template-columns: 1.5fr 2fr 1.5fr;
 `
 
-export const FooterLeft = styled.div`
+export const FooterLogo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem 0;
@@ -35,7 +37,7 @@ export const FooterLeft = styled.div`
   }
 `
 
-export const FooterCenter = styled.div`
+export const FooterItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,4 +76,11 @@ export const AddressItem = styled.address`
     gap: 1rem;
     margin-bottom: 5rem;
   }
+`
+
+export const CopyRight = styled.div`
+  grid-column: 1/5;
+  background-color: ${({ theme }) => theme.colors.gray2};
+  line-height: 8rem;
+  text-align: center;
 `
