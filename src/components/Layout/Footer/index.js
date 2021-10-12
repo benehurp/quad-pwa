@@ -8,12 +8,10 @@ import { Mail } from "@styled-icons/heroicons-outline/Mail"
 import { PhoneCall } from "@styled-icons/evaicons-solid/PhoneCall"
 import TelegramFooter from "./TelegramFooter"
 import useWindowSize from "../../Utils/useWindowSize"
-import { UserContext } from "../../../UserContext"
 
 const Footer = () => {
   const { width } = useWindowSize()
   const [logoSize, setLogoSize] = React.useState("65px")
-  const { openMenu } = React.useContext(UserContext)
 
   React.useEffect(() => {
     if (width <= 768) {
@@ -25,8 +23,8 @@ const Footer = () => {
 
   return (
     <>
-      <TelegramFooter />
       <S.Footer>
+        <TelegramFooter />
         <div className="footer-wrapper">
           <S.FooterColumn>
             <S.FooterLogo>

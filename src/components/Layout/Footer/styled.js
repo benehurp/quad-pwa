@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const Footer = styled.footer`
   .footer-wrapper {
@@ -11,6 +11,12 @@ export const Footer = styled.footer`
       padding: 0 2rem;
     }
   }
+
+  ${props =>
+    props.openMenu &&
+    css`
+      display: none;
+    `}
 `
 
 export const FooterColumn = styled.div`
