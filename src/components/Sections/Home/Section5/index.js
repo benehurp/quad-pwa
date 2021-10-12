@@ -1,10 +1,11 @@
 import React from "react"
 import * as S from "./styled"
 import ImageSection from "../../../../images/home-section5.jpg"
-import useWindowSize from "../../../Utils/useWindowSize"
+import { UserContext } from "../../../../UserContext"
 
 const HomeSection5 = () => {
-  const { width } = useWindowSize()
+  const { useWindowSize } = React.useContext(UserContext)
+  const [width] = useWindowSize()
   const [positionBg, setPositionBg] = React.useState("top left")
 
   React.useEffect(() => {

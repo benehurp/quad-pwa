@@ -3,10 +3,11 @@ import * as S from "./styled"
 import ArrowMark from "../../../../images/svg/arrow-mark.svg"
 import ImageSection from "../../../../images/home-section1.jpg"
 import MiniWideButton from "../../../Base/MiniWideButton"
-import useWindowSize from "../../../Utils/useWindowSize"
+import { UserContext } from "../../../../UserContext"
 
 const HomeSection1 = () => {
-  const { width } = useWindowSize()
+  const { useWindowSize } = React.useContext(UserContext)
+  const [width] = useWindowSize()
 
   return (
     <S.SectionWrapper

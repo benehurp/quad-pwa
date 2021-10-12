@@ -3,10 +3,11 @@ import * as S from "./styled"
 import MiniWideButton from "../../../Base/MiniWideButton"
 import Rotate3d from "../../../../images/rotate3d.png"
 import Cube3d from "../../../Base/Cube3d"
-import useWindowSize from "../../../Utils/useWindowSize"
+import { UserContext } from "../../../../UserContext"
 
 const HomeSection3 = () => {
-  const { width } = useWindowSize()
+  const { useWindowSize } = React.useContext(UserContext)
+  const [width] = useWindowSize()
   const [widthTitle, setWidthTitle] = React.useState("")
   const [widthParagraph, setWidthParagraph] = React.useState("")
   const [positionText, setPositionText] = React.useState("")
