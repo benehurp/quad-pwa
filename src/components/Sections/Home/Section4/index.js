@@ -4,12 +4,12 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper"
 import Quotes from "../../../../images/svg/quotes.svg"
 import { Swiper, SwiperSlide } from "swiper/react"
 import MiniWideButton from "../../../Base/MiniWideButton"
-import useWindowSize from "../../../Utils/useWindowSize"
+import { UserContext } from "../../../../UserContext"
 import testimonials from "./testimonials"
 
 const HomeSection4 = () => {
-  const { width } = useWindowSize()
-
+  const { useWindowSize } = React.useContext(UserContext)
+  const [width] = useWindowSize()
   const [characterSlice, setCharacterSlice] = React.useState(360)
   const [slideQty, setSlideQty] = React.useState(2)
   const [hide, setHide] = React.useState(true)

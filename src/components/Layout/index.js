@@ -2,15 +2,26 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import Header from "./Header"
 import Footer from "./Footer"
+import { UserContext } from "../../UserContext"
 
 const Layout = ({ children }) => {
-  return (
-    <>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </>
-  )
+  const { openMenu } = React.useContext(UserContext)
+
+  if (!openMenu) {
+    return (
+      <>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </>
+    )
+  } else {
+    return (
+      <>
+        <Header />
+      </>
+    )
+  }
 }
 
 Layout.propTypes = {
