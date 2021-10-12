@@ -17,7 +17,6 @@ export default {
     normal: "1fr minmax(280px, 1024px) 1fr",
   },
   font: {
-    family: `"Montserrat", Arial, Helvetica, sans-serif`,
     weight: {
       light: 300,
       normal: 400,
