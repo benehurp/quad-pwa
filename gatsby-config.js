@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Quadfinancial`,
+    title: `Quad Financial`,
     description: `A QUAD Financial é uma empresa de análise de investimentos, com foco no mercado de ações. Desenvolvemos o Método M4D, uma abordagem de investimento sem precedentes no mercado financeiro. Com ele, é possível extrair o sinal emitido por cada dimensão do mercado de ações e assim mensurar o risco de exposição ao mercado. A partir disso, construímos nossa estratégia de investimentos visando obter retornos consistentes no médio prazo.`,
     author: `@benehur.pessoa`,
     siteUrl: `https://quadfinancial.com.br/`,
@@ -46,7 +46,7 @@ module.exports = {
         // Setting a color is optional.
         color: `tomato`,
         // Disable the loading spinner.
-        showSpinner: true,
+        showSpinner: false,
       },
     },
     {
@@ -59,8 +59,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `QuadFinancial`,
-        short_name: `QuadFinancial`,
+        name: `Quad Financial`,
+        short_name: `Quad Financial`,
         orientation: `portrait`,
         start_url: `/`,
         description: `A QUAD Financial é uma empresa de análise de investimentos, com foco no mercado de ações.`,

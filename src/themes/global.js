@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
     /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -111,39 +111,39 @@ const GlobalStyles = createGlobalStyle`
       }
       html {
         font-size: 62.5%;
+        background: ${({ theme }) => theme.colors.gray3};
       }
-      ${({ theme }) => css`
-        body {
-          font-family: ${theme.font.family};
-          color: ${theme.colors.white};
-        }
-        ol,
-        ul {
-          list-style: none;
-        }
-        blockquote,
-        q {
-          quotes: none;
-        }
-        blockquote:before,
-        blockquote:after,
-        q:before,
-        q:after {
-          content: "";
-          content: none;
-        }
-        table {
-          border-collapse: collapse;
-          border-spacing: 0;
-        }
-        p {
-          display: block;
-          font-size: ${({ theme }) => theme.font.size.small};
-          line-height: 2rem;
-        }
-        p + p {
-          margin-top: 2rem;
-        }
-      `}
+      body {
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        color: ${({ theme }) => theme.colors.white};
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      p {
+        display: block;
+        font-size: ${({ theme }) => theme.font.size.small};
+        line-height: 2rem;
+      }
+      p + p {
+        margin-top: 2rem;
+      }
 `
+
 export default GlobalStyles
