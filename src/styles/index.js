@@ -5,9 +5,7 @@ const GlobalStyles = createGlobalStyle`
     v2.0 | 20110126
     License: none (public domain)
     */
-      html {
-        font-size: 62.5%;
-      }
+
       html,
       body,
       div,
@@ -97,6 +95,9 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         vertical-align: baseline;
         color: ${({ theme }) => theme.colors.white};
+      }
+      html {
+        font-size: 62.5%;
       }
       /* HTML5 display-role reset for older browsers */
       article,
