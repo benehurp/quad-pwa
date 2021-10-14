@@ -111,10 +111,9 @@ const GlobalStyles = createGlobalStyle`
       }
       html {
         font-size: 62.5%;
-        background: ${({ theme }) => theme.colors.gray3};
       }
       body {
-        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         color: ${({ theme }) => theme.colors.white};
       }
       ol,
