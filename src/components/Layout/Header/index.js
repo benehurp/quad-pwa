@@ -10,8 +10,6 @@ const Header = () => {
 
   const [width] = useWindowSize()
 
-  console.log(width)
-
   return (
     <S.HeaderWrapper>
       <S.HeaderItems>
