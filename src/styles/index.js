@@ -1,16 +1,8 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
-    /* http://meyerweb.com/eric/tools/css/reset/ 
-    v2.0 | 20110126
-    License: none (public domain)
-    */
-
-      html,
-      body,
       div,
       span,
-      button,
       applet,
       object,
       iframe,
@@ -92,14 +84,21 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         border: 0;
         font-size: 100%;
-        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font: inherit;
         vertical-align: baseline;
-        color: ${({ theme }) => theme.colors.white};
       }
       html {
         font-size: 62.5%;
       }
-      /* HTML5 display-role reset for older browsers */
+      body {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        color: ${({ theme }) => theme.colors.white};
+        margin: 0;
+      }
+      button {
+        border: 0;
+        appearance: none;
+      }
       article,
       aside,
       details,
