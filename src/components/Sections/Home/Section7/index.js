@@ -133,7 +133,8 @@ const HomeSection7 = () => {
           </S.Card>
         </ul>
         <MiniWideButton
-          link="#"
+          link="https://quadfinancial.com.br/webinario-premium/"
+          $externalLink="true"
           $width="100%"
           $height="5rem"
           $borderRadius=".8rem"
