@@ -64,7 +64,8 @@ const HomeSection6 = () => {
             melhores. E isso é exatamente o que oferecemos.
           </S.Paragraph>
           <MiniWideButton
-            link="#"
+            link="https://quadfinancial.com.br/assinatura"
+            $externalLink="true"
             $width="100%"
             $height="5rem"
             $borderRadius=".8rem"

@@ -122,9 +122,9 @@ const HomeSection7 = () => {
             <S.Paragraph fontSize="xsmall" textAlign="center">
               Formado em Direito (UNISC), Tiago é Analista CNPI-T e fundou a
               QUAD Financial ao lado de Gambogi. Tiago se dedica a identificar
-              as maiores oportunidades micro no stock picking para identificar
-              os ativos com potencial de super performance. Além disso, é ele
-              quem produz os conteúdos nas mídias sociais da Quad.
+              oportunidades micro no stock picking para identificar os ativos
+              com potencial de super performance. Além disso, é ele quem produz
+              os conteúdos nas mídias sociais da Quad.
             </S.Paragraph>
 
             <div className="stamp">

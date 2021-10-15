@@ -11,18 +11,18 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Montserrat\:300,400,600,800`],
+        display: "swap",
+      },
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
           families: ["Montserrat"],
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Montserrat\:300,400,600,800`],
-        display: "swap",
       },
     },
     {
@@ -61,8 +61,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Quad Financial`,
-        short_name: `QF`,
+        name: `QuadFinancial`,
+        short_name: `QuadFinancial`,
         start_url: `/`,
         description: `A QUAD Financial é uma empresa de análise de investimentos, com foco no mercado de ações.`,
         background_color: `#172331`,

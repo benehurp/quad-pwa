@@ -5,7 +5,7 @@ const menuData = [
   {
     id: 3,
     title: "Assinaturas",
-    url: "https://www.assinaturas.quadfinancial.com.br/",
+    url: "https://quadfinancial.com.br/assinatura",
     disable: "false",
   },
   { id: 4, title: "Artigos", url: "#", disable: "true" },
