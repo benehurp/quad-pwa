@@ -30,7 +30,7 @@ const HomeSection1 = () => {
         <img src={ArrowMark} alt="Saiba mais" className="move-down-icon" />
       </div>
       <div className="button-wrapper">
-        {width <= 600 ? (
+        {width < 500 ? (
           <MiniWideButton
             link="#"
             $width="30rem"
