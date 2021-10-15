@@ -67,7 +67,8 @@ const HomeSection3 = () => {
           )}
           {hide && (
             <MiniWideButton
-              link="#"
+              link="https://quadfinancial.com.br/webinario-premium/"
+              $externalLink="true"
               $width="85%"
               $height="5rem"
               $borderRadius=".8rem"

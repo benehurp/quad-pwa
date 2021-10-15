@@ -30,27 +30,16 @@ const HomeSection1 = () => {
         <img src={ArrowMark} alt="Saiba mais" className="move-down-icon" />
       </div>
       <div className="button-wrapper">
-        {width < 500 ? (
-          <MiniWideButton
-            link="#"
-            $width="30rem"
-            $height="5rem"
-            $borderRadius="0.8rem"
-            $fontSize="small"
-          >
-            Quero conhecer as assinaturas
-          </MiniWideButton>
-        ) : (
-          <MiniWideButton
-            link="#"
-            $width="40rem"
-            $height="5rem"
-            $borderRadius="0.8rem"
-            $fontSize="small"
-          >
-            Quero conhecer as assinaturas
-          </MiniWideButton>
-        )}
+        <MiniWideButton
+          link="https://quadfinancial.com.br/assinatura"
+          externalLink="true"
+          $width="auto"
+          $height="5rem"
+          $borderRadius="0.8rem"
+          $fontSize="small"
+        >
+          Quero conhecer as assinaturas
+        </MiniWideButton>
       </div>
     </S.SectionWrapper>
   )
