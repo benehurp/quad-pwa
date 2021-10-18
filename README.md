@@ -1,2 +1,2 @@
 # quad-pwa
-Site oficial da Quadfinancial
+Projeto criado em gatsby (React, styled components, three.js)
